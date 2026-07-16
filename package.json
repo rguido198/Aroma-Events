@@ -2,9 +2,17 @@
   "name": "aroma-events",
   "private": true,
   "scripts": {
+    "build:css": "tailwindcss -i ./src/input.css -o ./public/css/styles.css --minify",
+    "build:es": "node src/build-es.mjs",
+    "build:js": "terser src/i18n.source.js -o public/js/i18n.js --compress --mangle --comments false && terser src/main.source.js -o public/js/main.js --compress --mangle --comments false",
+    "build": "npm run build:css && npm run build:js && npm run build:es",
     "deploy": "wrangler deploy"
   },
   "devDependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "cheerio": "^1.2.0",
+    "tailwindcss": "^4.3.3",
+    "terser": "^5.49.0",
     "wrangler": "latest"
   }
 }
