@@ -1,5 +1,5 @@
 {
-  "name": "aroma-events",
+  "name": "aromaevents",
   "compatibility_date": "2026-07-16",
   "assets": {
     "directory": "./public"
