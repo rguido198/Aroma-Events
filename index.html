@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aroma Events — Private Event Space in Valle de Guadalupe</title>
+  <meta name="description" id="meta-description" content="Aroma Events is a private event space among the vineyards of Valle de Guadalupe, Baja California — for weddings, wine dinners, celebrations, and gatherings that celebrate the aroma of life.">
+  <meta name="theme-color" content="#F3F1E5">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <!-- Open Graph -->
+  <meta property="og:title" id="og-title" content="Aroma Events — Valle de Guadalupe">
+  <meta property="og:description" id="og-description" content="A private event space among the vineyards of Valle de Guadalupe. Celebrating the aroma of life.">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream: '#F3F1E5',
+            'cream-alt': '#EBE6D6',
+            wine: { DEFAULT: '#651F27', dark: '#4A161C' },
+            terracotta: { DEFAULT: '#C49279', dark: '#A5725A' },
+            olive: '#A5975A',
+            greige: '#D2D2D2',
+            dusk: '#5880B2',
+            ink: '#2A2321',
+          },
+          fontFamily: {
+            display: ['Jost', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+</head>
+<body class="font-body bg-cream text-ink antialiased">
+
+  <!-- Subtle full-page grain texture, purely decorative -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Reusable SVG defs: hand-painted wobble filter for the ring mark, shared across the page -->
+  <svg width="0" height="0" class="absolute" aria-hidden="true">
+    <defs>
+      <filter id="ringWobble" x="-50%" y="-50%" width="200%" height="200%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.025" numOctaves="2" seed="7" result="noise"/>
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="7"/>
+      </filter>
+
+      <!-- Wine-stain ring mark: layered, wobbled strokes mimicking an actual wine-glass stain
+           (dark maroon rim bleeding into a lighter rose mid-tone, uneven brushy thickness). -->
+      <filter id="stainWobbleSoft" x="-60%" y="-60%" width="220%" height="220%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.015" numOctaves="2" seed="3" result="n"/>
+        <feDisplacementMap in="SourceGraphic" in2="n" scale="16"/>
+      </filter>
+      <filter id="stainWobbleMid" x="-60%" y="-60%" width="220%" height="220%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" seed="11" result="n"/>
+        <feDisplacementMap in="SourceGraphic" in2="n" scale="11"/>
+      </filter>
+      <filter id="stainWobbleSharp" x="-60%" y="-60%" width="220%" height="220%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" seed="19" result="n"/>
+        <feDisplacementMap in="SourceGraphic" in2="n" scale="9"/>
+      </filter>
+      <symbol id="wineStainRing" viewBox="0 0 200 200">
+        <circle cx="102" cy="101" r="75" fill="none" stroke="#D3A08D" stroke-width="28" stroke-linecap="round" stroke-dasharray="430 60" filter="url(#stainWobbleSoft)" opacity="0.4"/>
+        <circle cx="98" cy="100" r="69" fill="none" stroke="#96453F" stroke-width="15" stroke-linecap="round" stroke-dasharray="410 25" filter="url(#stainWobbleMid)" opacity="0.8"/>
+        <circle cx="100" cy="99" r="67" fill="none" stroke="#4A161C" stroke-width="8" stroke-linecap="round" stroke-dasharray="365 55" filter="url(#stainWobbleSharp)" opacity="0.92"/>
+      </symbol>
+
+      <!-- Icon sprite (Heroicons-style outline, stroke=currentColor) -->
+      <symbol id="icon-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+      <symbol id="icon-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+      <symbol id="icon-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.1 7-11.5A7 7 0 0 0 5 9.5C5 14.9 12 21 12 21Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><circle cx="12" cy="9.5" r="2.4" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol>
+      <symbol id="icon-phone" viewBox="0 0 24 24"><path d="M6.5 4h3l1.5 4-2 1.5a11 11 0 0 0 5.5 5.5L16 13l4 1.5v3a2 2 0 0 1-2.2 2A16 16 0 0 1 4.5 6.2 2 2 0 0 1 6.5 4Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+      <symbol id="icon-mail" viewBox="0 0 24 24"><rect x="3.5" y="5.5" width="17" height="13" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M4.5 6.5l7.5 6 7.5-6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="icon-calendar" viewBox="0 0 24 24"><rect x="4" y="5.5" width="16" height="15" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M4 9.5h16M8 3.5v4M16 3.5v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+      <symbol id="icon-users" viewBox="0 0 24 24"><circle cx="9" cy="8.5" r="3" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M3.5 19c0-3 2.5-5 5.5-5s5.5 2 5.5 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M15.5 6.7a3 3 0 0 1 0 5.7M18 19c0-2.4-1.6-4.3-3.8-4.9" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+      <symbol id="icon-glass" viewBox="0 0 24 24"><path d="M7 3.5h10l-1.3 8.2a3.7 3.7 0 0 1-7.4 0L7 3.5Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M12 13.5V20M8.5 20h7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+      <symbol id="icon-leaf" viewBox="0 0 24 24"><path d="M5 19c-1-6 2.5-13 14-14-1 11-8 14-14 14Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M6 18c3-3 6-6 12-12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+      <symbol id="icon-sparkle" viewBox="0 0 24 24"><path d="M12 3.5l1.6 5.4 5.4 1.6-5.4 1.6L12 17.5l-1.6-5.4-5.4-1.6 5.4-1.6L12 3.5Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+      <symbol id="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M12 2.5v3M12 18.5v3M4.6 4.6l2.1 2.1M17.3 17.3l2.1 2.1M2.5 12h3M18.5 12h3M4.6 19.4l2.1-2.1M17.3 6.7l2.1-2.1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+      <symbol id="icon-instagram" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="17" cy="7" r="0.9" fill="currentColor"/></symbol>
+      <symbol id="icon-facebook" viewBox="0 0 24 24"><path d="M14 21v-7h2.4l.4-3H14V9c0-.9.2-1.5 1.6-1.5H17V4.8c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.2H8.5v3H11v7h3Z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></symbol>
+      <symbol id="icon-whatsapp" viewBox="0 0 24 24"><path d="M6.5 17.5 5 20l2.6-1.4A7.5 7.5 0 1 0 5 12a7.4 7.4 0 0 0 1 3.7Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M9.2 10.2c.3 1.9 2 3.6 3.9 3.9.7.1 1-.5.8-1l-.5-1a.6.6 0 0 0-.7-.3l-.8.3a3.6 3.6 0 0 1-1.7-1.7l.3-.8a.6.6 0 0 0-.3-.7l-1-.5c-.5-.2-1.1.1-1 .8Z" fill="currentColor" stroke="none"/></symbol>
+      <symbol id="icon-arrow-down" viewBox="0 0 24 24"><path d="M12 4v15M6 13l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="icon-camera" viewBox="0 0 24 24"><path d="M4 8.5A1.5 1.5 0 0 1 5.5 7h2l1-2h7l1 2h2A1.5 1.5 0 0 1 20 8.5v9A1.5 1.5 0 0 1 18.5 19h-13A1.5 1.5 0 0 1 4 17.5v-9Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><circle cx="12" cy="13" r="3.2" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol>
+    </defs>
+  </svg>
+
+  <!-- ============ HEADER ============ -->
+  <header id="site-header" class="fixed top-0 inset-x-0 z-30">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 flex items-center justify-between h-20">
+      <a href="#home" class="flex items-center gap-3 group" data-i18n-aria="aria.home" aria-label="Aroma Events — home">
+        <svg viewBox="0 0 200 200" class="w-8 h-8 shrink-0">
+          <use href="#wineStainRing"/>
+        </svg>
+        <span class="leading-tight">
+          <span class="block font-display font-medium text-lg tracking-[0.3em] text-ink">AROMA</span>
+          <span class="block font-display text-[9px] tracking-[0.25em] text-wine -mt-0.5">VALLE DE GUADALUPE</span>
+        </span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-9 font-display text-xs tracking-[0.2em] uppercase text-ink" data-i18n-aria="aria.primaryNav" aria-label="Primary">
+        <a href="#space" data-i18n="nav.space" class="hover:text-wine transition-colors duration-200">The Space</a>
+        <a href="#experiences" data-i18n="nav.experiences" class="hover:text-wine transition-colors duration-200">Experiences</a>
+        <a href="#gallery" data-i18n="nav.gallery" class="hover:text-wine transition-colors duration-200">Gallery</a>
+        <a href="#location" data-i18n="nav.location" class="hover:text-wine transition-colors duration-200">Location</a>
+      </nav>
+
+      <div class="hidden md:flex items-center gap-5">
+        <div class="flex items-center font-display text-xs tracking-[0.1em]" role="group" data-i18n-aria="aria.langSwitch" aria-label="Switch language">
+          <button type="button" data-lang-btn="en" aria-pressed="true" class="min-w-[32px] h-11 px-1 text-wine hover:text-wine-dark transition-colors">EN</button>
+          <span class="text-ink/30" aria-hidden="true">/</span>
+          <button type="button" data-lang-btn="es" aria-pressed="false" class="min-w-[32px] h-11 px-1 text-ink/40 hover:text-wine transition-colors">ES</button>
+        </div>
+
+        <a href="#inquire" data-i18n="nav.cta" class="inline-flex items-center h-11 px-6 bg-wine text-cream font-display text-xs tracking-[0.2em] uppercase hover:bg-wine-dark transition-colors duration-200">
+          Plan Your Event
+        </a>
+      </div>
+
+      <button id="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" data-i18n-aria="aria.openMenu" aria-label="Open menu" class="md:hidden w-11 h-11 flex items-center justify-center text-ink">
+        <svg class="w-6 h-6"><use href="#icon-menu"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ MOBILE NAV ============ -->
+  <div id="mobile-nav" data-open="false" class="fixed inset-0 z-40 bg-cream flex flex-col" role="dialog" aria-modal="true" data-i18n-aria="aria.mobileMenu" aria-label="Mobile menu">
+    <div class="flex items-center justify-between h-20 px-6">
+      <span class="font-display tracking-[0.3em] text-lg">AROMA</span>
+      <button id="menu-close" type="button" data-i18n-aria="aria.closeMenu" aria-label="Close menu" class="w-11 h-11 flex items-center justify-center text-ink">
+        <svg class="w-6 h-6"><use href="#icon-close"/></svg>
+      </button>
+    </div>
+    <nav class="flex-1 flex flex-col items-center justify-center gap-8 font-display text-xl tracking-[0.15em] uppercase" data-i18n-aria="aria.mobileNav" aria-label="Mobile primary">
+      <a href="#space" data-i18n="nav.space" class="min-h-[44px] flex items-center hover:text-wine transition-colors">The Space</a>
+      <a href="#experiences" data-i18n="nav.experiences" class="min-h-[44px] flex items-center hover:text-wine transition-colors">Experiences</a>
+      <a href="#gallery" data-i18n="nav.gallery" class="min-h-[44px] flex items-center hover:text-wine transition-colors">Gallery</a>
+      <a href="#location" data-i18n="nav.location" class="min-h-[44px] flex items-center hover:text-wine transition-colors">Location</a>
+      <a href="#inquire" data-i18n="nav.cta" class="mt-4 inline-flex items-center h-12 px-8 bg-wine text-cream text-sm tracking-[0.2em]">Plan Your Event</a>
+
+      <div class="mt-6 flex items-center gap-2 font-display text-sm tracking-[0.1em] normal-case" role="group" data-i18n-aria="aria.langSwitch" aria-label="Switch language">
+        <button type="button" data-lang-btn="en" aria-pressed="true" class="min-w-[44px] h-11 text-wine hover:text-wine-dark transition-colors">EN</button>
+        <span class="text-ink/30" aria-hidden="true">/</span>
+        <button type="button" data-lang-btn="es" aria-pressed="false" class="min-w-[44px] h-11 text-ink/40 hover:text-wine transition-colors">ES</button>
+      </div>
+    </nav>
+  </div>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section id="home" class="relative min-h-screen flex items-center overflow-hidden pt-20">
+      <!-- Golden-hour gradient backdrop, standing in for venue photography (see design.md §5) -->
+      <div class="absolute inset-0 -z-10" style="background: radial-gradient(120% 90% at 80% 15%, #E8B4AE 0%, #C49279 32%, #EBE6D6 62%, #F3F1E5 100%);" aria-hidden="true"></div>
+
+      <!-- Vineyard hill silhouette -->
+      <svg class="absolute bottom-0 left-0 w-full h-40 md:h-64 -z-10 text-terracotta-dark/30" viewBox="0 0 1440 300" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0 220 C 180 160 320 240 480 190 C 640 140 760 220 920 180 C 1080 140 1220 210 1440 170 L1440 300 L0 300 Z" fill="currentColor"/>
+      </svg>
+      <svg class="absolute bottom-0 left-0 w-full h-28 md:h-44 -z-10 text-wine/20" viewBox="0 0 1440 200" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0 160 C 200 120 340 180 520 140 C 700 100 860 170 1040 130 C 1220 95 1320 150 1440 120 L1440 200 L0 200 Z" fill="currentColor"/>
+      </svg>
+
+      <!-- Decorative concentric rings, echoing the brand's title-slide motif -->
+      <svg class="hero-rings absolute -right-24 top-24 w-[420px] h-[420px] text-wine/15 hidden sm:block" viewBox="0 0 400 400" aria-hidden="true">
+        <circle cx="200" cy="200" r="190" stroke-width="1"/>
+        <circle cx="200" cy="200" r="160" stroke-width="1"/>
+        <circle cx="200" cy="200" r="130" stroke-width="1"/>
+      </svg>
+
+      <div class="max-w-7xl mx-auto px-6 lg:px-10 relative">
+        <div class="max-w-2xl reveal">
+          <div class="inline-flex items-center gap-2 mb-6 px-4 h-9 border border-wine/30 text-wine font-display text-[11px] tracking-[0.25em] uppercase">
+            <svg class="w-3.5 h-3.5"><use href="#icon-pin"/></svg>
+            <span data-i18n="hero.badge">Valle de Guadalupe, Baja California</span>
+          </div>
+          <h1 class="font-display font-light uppercase tracking-[0.06em] text-4xl sm:text-5xl lg:text-6xl leading-[1.1] text-ink">
+            <span data-i18n="hero.line1">Celebrating the</span><br><span class="text-wine" data-i18n="hero.line2">Aroma of Life</span>
+          </h1>
+          <p class="mt-6 text-base sm:text-lg text-ink/80 leading-relaxed max-w-lg" data-i18n="hero.subhead">
+            A private event space set among the vineyards of Valle de Guadalupe — for weddings, wine dinners, and gatherings meant to be lingered over.
+          </p>
+          <div class="mt-9 flex flex-wrap gap-4">
+            <a href="#inquire" data-i18n="hero.cta1" class="inline-flex items-center h-12 px-7 bg-wine text-cream font-display text-xs tracking-[0.2em] uppercase hover:bg-wine-dark transition-colors duration-200">
+              Plan Your Event
+            </a>
+            <a href="#space" data-i18n="hero.cta2" class="inline-flex items-center h-12 px-7 border border-ink/30 text-ink font-display text-xs tracking-[0.2em] uppercase hover:border-wine hover:text-wine transition-colors duration-200">
+              Explore the Space
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <a href="#space" data-i18n-aria="aria.scrollNext" aria-label="Scroll to next section" class="hidden sm:flex absolute bottom-8 left-1/2 -translate-x-1/2 w-11 h-11 items-center justify-center text-wine/70 hover:text-wine transition-colors">
+        <svg class="w-5 h-5 animate-bounce"><use href="#icon-arrow-down"/></svg>
+      </a>
+    </section>
+
+    <!-- ============ BRAND STORY ============ -->
+    <section class="py-24 sm:py-32">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-16 items-center">
+        <div class="reveal">
+          <span class="font-display text-xs tracking-[0.3em] uppercase text-wine" data-i18n="story.eyebrow">Our Story</span>
+          <h2 class="mt-4 font-display font-light uppercase tracking-[0.04em] text-3xl sm:text-4xl leading-tight" data-i18n="story.heading">
+            Where wine, gathering,<br>and memory meet
+          </h2>
+          <p class="mt-6 text-ink/80 leading-relaxed" data-i18n="story.p1">
+            We believe gatherings, paired with wine, provide the greatest opportunity to create connections and memories. Set among the vines of Valle de Guadalupe, Aroma Events was built for guests to live in the moment, indulge in one another, and celebrate the aroma of life.
+          </p>
+          <p class="mt-4 text-ink/80 leading-relaxed" data-i18n="story.p2">
+            Every detail — the light, the pour, the table — is arranged so the day is remembered less for what was planned and more for how it felt.
+          </p>
+          <a href="#location" class="mt-8 inline-flex items-center gap-2 font-display text-xs tracking-[0.2em] uppercase text-wine hover:text-wine-dark transition-colors">
+            <span data-i18n="story.link">Discover the Valley</span>
+            <svg class="w-4 h-4 -rotate-90"><use href="#icon-arrow-down"/></svg>
+          </a>
+        </div>
+
+        <div class="relative reveal">
+          <div class="aspect-square rounded-full overflow-hidden bg-terracotta/40 relative mx-auto max-w-md">
+            <img src="assets/photos/brand-story.jpg" data-i18n-alt="story.photo.alt" alt="Walking through the vineyard rows at golden hour" class="absolute inset-0 w-full h-full object-cover" loading="lazy">
+          </div>
+          <svg viewBox="0 0 200 200" class="absolute -top-6 -left-6 w-24 h-24">
+            <use href="#wineStainRing"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ THE SPACE ============ -->
+    <section id="space" class="py-24 sm:py-32 bg-cream-alt">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10">
+        <div class="max-w-2xl reveal">
+          <span class="font-display text-xs tracking-[0.3em] uppercase text-wine" data-i18n="space.eyebrow">The Space</span>
+          <h2 class="mt-4 font-display font-light uppercase tracking-[0.04em] text-3xl sm:text-4xl leading-tight" data-i18n="space.heading">
+            Three settings, one valley
+          </h2>
+          <p class="mt-6 text-ink/80 leading-relaxed" data-i18n="space.subhead">
+            Indoor and open-air spaces designed to move with the day — for an intimate dinner of twenty or a celebration of two hundred.
+          </p>
+        </div>
+
+        <!-- Placeholder venue names — replace with your actual space names -->
+        <div class="mt-16 grid md:grid-cols-3 gap-8">
+          <article class="reveal bg-cream p-8 flex flex-col">
+            <div class="aspect-[4/3] mb-6 relative overflow-hidden">
+              <img src="assets/photos/space-terrace.jpg" data-i18n-alt="space.terrace.alt" alt="Outdoor pergola terrace strung with lights among the vines" class="absolute inset-0 w-full h-full object-cover" loading="lazy">
+            </div>
+            <svg class="w-6 h-6 text-wine mb-4"><use href="#icon-sun"/></svg>
+            <h3 class="font-display text-lg tracking-[0.1em] uppercase" data-i18n="space.terrace.name">The Vineyard Terrace</h3>
+            <p class="mt-3 text-sm text-ink/70 leading-relaxed flex-1" data-i18n="space.terrace.desc">Open-air, framed by rows of vines and golden-hour light — built for ceremonies and long, unhurried dinners.</p>
+            <div class="mt-5 flex items-center gap-2 text-xs font-display tracking-[0.15em] uppercase text-ink/60">
+              <svg class="w-4 h-4"><use href="#icon-users"/></svg>
+              <span data-i18n="space.terrace.guests">Up to 200 guests</span>
+            </div>
+          </article>
+
+          <article class="reveal bg-cream p-8 flex flex-col">
+            <div class="aspect-[4/3] mb-6 relative overflow-hidden">
+              <img src="assets/photos/space-barrel-room.jpg" data-i18n-alt="space.barrel.alt" alt="Stacked wine barrels in a dim cellar room" class="absolute inset-0 w-full h-full object-cover" loading="lazy">
+            </div>
+            <svg class="w-6 h-6 text-wine mb-4"><use href="#icon-glass"/></svg>
+            <h3 class="font-display text-lg tracking-[0.1em] uppercase" data-i18n="space.barrel.name">The Barrel Room</h3>
+            <p class="mt-3 text-sm text-ink/70 leading-relaxed flex-1" data-i18n="space.barrel.desc">An intimate, candlelit indoor space among the barrels — ideal for tastings, rehearsal dinners, and smaller gatherings.</p>
+            <div class="mt-5 flex items-center gap-2 text-xs font-display tracking-[0.15em] uppercase text-ink/60">
+              <svg class="w-4 h-4"><use href="#icon-users"/></svg>
+              <span data-i18n="space.barrel.guests">Up to 45 guests</span>
+            </div>
+          </article>
+
+          <article class="reveal bg-cream p-8 flex flex-col">
+            <div class="aspect-[4/3] mb-6 relative overflow-hidden">
+              <img src="assets/photos/space-courtyard.jpg" data-i18n-alt="space.courtyard.alt" alt="Shaded stone courtyard with bougainvillea and wrought-iron chairs" class="absolute inset-0 w-full h-full object-cover" loading="lazy">
+            </div>
+            <svg class="w-6 h-6 text-wine mb-4"><use href="#icon-leaf"/></svg>
+            <h3 class="font-display text-lg tracking-[0.1em] uppercase" data-i18n="space.courtyard.name">The Garden Courtyard</h3>
+            <p class="mt-3 text-sm text-ink/70 leading-relaxed flex-1" data-i18n="space.courtyard.desc">A shaded, adobe-walled courtyard — a flexible setting for cocktail hours, showers, and daytime celebrations.</p>
+            <div class="mt-5 flex items-center gap-2 text-xs font-display tracking-[0.15em] uppercase text-ink/60">
+              <svg class="w-4 h-4"><use href="#icon-users"/></svg>
+              <span data-i18n="space.courtyard.guests">Up to 90 guests</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCES ============ -->
+    <section id="experiences" class="py-24 sm:py-32">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10">
+        <div class="max-w-2xl reveal">
+          <span class="font-display text-xs tracking-[0.3em] uppercase text-wine" data-i18n="experiences.eyebrow">Experiences</span>
+          <h2 class="mt-4 font-display font-light uppercase tracking-[0.04em] text-3xl sm:text-4xl leading-tight" data-i18n="experiences.heading">
+            Occasions we host
+          </h2>
+        </div>
+
+        <div class="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
+          <div class="reveal flex gap-4">
+            <svg class="w-8 h-8 text-wine shrink-0"><use href="#icon-sparkle"/></svg>
+            <div>
+              <h3 class="font-display text-base tracking-[0.1em] uppercase" data-i18n="exp.wedding.name">Weddings</h3>
+              <p class="mt-2 text-sm text-ink/70 leading-relaxed" data-i18n="exp.wedding.desc">Ceremonies and receptions set against the vines, from intimate elopements to full celebrations.</p>
+            </div>
+          </div>
+          <div class="reveal flex gap-4">
+            <svg class="w-8 h-8 text-wine shrink-0"><use href="#icon-glass"/></svg>
+            <div>
+              <h3 class="font-display text-base tracking-[0.1em] uppercase" data-i18n="exp.winedinner.name">Wine Dinners &amp; Tastings</h3>
+              <p class="mt-2 text-sm text-ink/70 leading-relaxed" data-i18n="exp.winedinner.desc">Seated dinners and guided tastings that pair the valley's wine with a shared table.</p>
+            </div>
+          </div>
+          <div class="reveal flex gap-4">
+            <svg class="w-8 h-8 text-wine shrink-0"><use href="#icon-users"/></svg>
+            <div>
+              <h3 class="font-display text-base tracking-[0.1em] uppercase" data-i18n="exp.corporate.name">Corporate Retreats</h3>
+              <p class="mt-2 text-sm text-ink/70 leading-relaxed" data-i18n="exp.corporate.desc">Offsites and team gatherings that trade conference rooms for open sky and good wine.</p>
+            </div>
+          </div>
+          <div class="reveal flex gap-4">
+            <svg class="w-8 h-8 text-wine shrink-0"><use href="#icon-sun"/></svg>
+            <div>
+              <h3 class="font-display text-base tracking-[0.1em] uppercase" data-i18n="exp.milestone.name">Milestone Celebrations</h3>
+              <p class="mt-2 text-sm text-ink/70 leading-relaxed" data-i18n="exp.milestone.desc">Birthdays, anniversaries, and reunions — an occasion made a little more memorable.</p>
+            </div>
+          </div>
+          <div class="reveal flex gap-4">
+            <svg class="w-8 h-8 text-wine shrink-0"><use href="#icon-leaf"/></svg>
+            <div>
+              <h3 class="font-display text-base tracking-[0.1em] uppercase" data-i18n="exp.rehearsal.name">Rehearsal Dinners</h3>
+              <p class="mt-2 text-sm text-ink/70 leading-relaxed" data-i18n="exp.rehearsal.desc">A relaxed evening the night before, in the barrel room or under the garden lights.</p>
+            </div>
+          </div>
+          <div class="reveal flex gap-4">
+            <svg class="w-8 h-8 text-wine shrink-0"><use href="#icon-calendar"/></svg>
+            <div>
+              <h3 class="font-display text-base tracking-[0.1em] uppercase" data-i18n="exp.private.name">Private Gatherings</h3>
+              <p class="mt-2 text-sm text-ink/70 leading-relaxed" data-i18n="exp.private.desc">Bring your own reason to celebrate — we'll help shape the rest.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GALLERY / MOODBOARD ============ -->
+    <!-- Styled as a mood board, matching the brand book's own "visual inspiration" moodboard slide,
+         mixing real photography with two graphic accent tiles echoing the ring logo motif. -->
+    <section id="gallery" class="py-24 sm:py-32 bg-cream-alt">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10">
+        <div class="max-w-2xl reveal">
+          <span class="font-display text-xs tracking-[0.3em] uppercase text-wine" data-i18n="gallery.eyebrow">Gallery</span>
+          <h2 class="mt-4 font-display font-light uppercase tracking-[0.04em] text-3xl sm:text-4xl leading-tight" data-i18n="gallery.heading">
+            The feeling we're after
+          </h2>
+        </div>
+
+        <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-5">
+          <!-- tile 1 -->
+          <figure class="reveal mood-tile relative aspect-square overflow-hidden">
+            <img src="assets/photos/golden-hour.jpg" data-i18n-alt="gallery.goldenhour.alt" alt="Wine country valley at golden hour" class="absolute inset-0 w-full h-full object-cover" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-ink/50 via-transparent to-transparent"></div>
+            <figcaption class="absolute bottom-3 left-3 font-display text-[10px] tracking-[0.2em] uppercase text-cream" data-i18n="gallery.goldenhour">Golden Hour</figcaption>
+          </figure>
+          <!-- tile 2 -->
+          <figure class="reveal mood-tile relative aspect-square overflow-hidden md:mt-8">
+            <img src="assets/photos/vineyard-rows.jpg" data-i18n-alt="gallery.vineyardrows.alt" alt="Aerial view of vineyard rows" class="absolute inset-0 w-full h-full object-cover" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-ink/50 via-transparent to-transparent"></div>
+            <figcaption class="absolute bottom-3 left-3 font-display text-[10px] tracking-[0.2em] uppercase text-cream" data-i18n="gallery.vineyardrows">Vineyard Rows</figcaption>
+          </figure>
+          <!-- tile 3 -->
+          <figure class="reveal mood-tile relative aspect-square overflow-hidden rounded-full">
+            <div class="absolute inset-0" style="background: radial-gradient(circle at 40% 35%, #F3F1E5 0%, #C49279 60%, #651F27 100%);"></div>
+            <div class="absolute inset-0 flex items-center justify-center text-cream/90">
+              <svg viewBox="0 0 200 200" class="ring-mark w-14 h-14 text-cream">
+                <circle cx="100" cy="100" r="70" stroke-width="14"/>
+              </svg>
+            </div>
+          </figure>
+          <!-- tile 4 -->
+          <figure class="reveal mood-tile relative aspect-square overflow-hidden md:mt-8">
+            <img src="assets/photos/together.jpg" data-i18n-alt="gallery.together.alt" alt="Friends laughing while toasting wine glasses" class="absolute inset-0 w-full h-full object-cover" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-ink/50 via-transparent to-transparent"></div>
+            <figcaption class="absolute bottom-3 left-3 font-display text-[10px] tracking-[0.2em] uppercase text-cream" data-i18n="gallery.together">Together</figcaption>
+          </figure>
+          <!-- tile 5 -->
+          <figure class="reveal mood-tile relative aspect-square overflow-hidden">
+            <img src="assets/photos/wine-ring.jpg" data-i18n-alt="gallery.pour.alt" alt="Red wine being poured into a glass outdoors" class="absolute inset-0 w-full h-full object-cover" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-ink/50 via-transparent to-transparent"></div>
+            <figcaption class="absolute bottom-3 left-3 font-display text-[10px] tracking-[0.2em] uppercase text-cream" data-i18n="gallery.pour">The Pour</figcaption>
+          </figure>
+          <!-- tile 6 -->
+          <figure class="reveal mood-tile relative aspect-square overflow-hidden rounded-full md:mt-8">
+            <div class="absolute inset-0" style="background: radial-gradient(circle at 60% 40%, #F3F1E5 0%, #A5975A 70%);"></div>
+            <div class="absolute inset-0 flex items-center justify-center text-ink/60">
+              <svg class="w-7 h-7"><use href="#icon-leaf"/></svg>
+            </div>
+          </figure>
+          <!-- tile 7 -->
+          <figure class="reveal mood-tile relative aspect-square overflow-hidden">
+            <img src="assets/photos/cozy-details.jpg" data-i18n-alt="gallery.cozy.alt" alt="Close-up of a pile of wine corks" class="absolute inset-0 w-full h-full object-cover" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-ink/40 via-transparent to-transparent"></div>
+            <figcaption class="absolute bottom-3 left-3 font-display text-[10px] tracking-[0.2em] uppercase text-cream" data-i18n="gallery.cozy">Cozy Details</figcaption>
+          </figure>
+          <!-- tile 8 -->
+          <figure class="reveal mood-tile relative aspect-square overflow-hidden md:mt-8">
+            <img src="assets/photos/open-spaces.jpg" data-i18n-alt="gallery.open.alt" alt="Warm stucco winery building with string lights and wine barrels" class="absolute inset-0 w-full h-full object-cover" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-ink/50 via-transparent to-transparent"></div>
+            <figcaption class="absolute bottom-3 left-3 font-display text-[10px] tracking-[0.2em] uppercase text-cream" data-i18n="gallery.open">Open Spaces</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LOCATION ============ -->
+    <section id="location" class="py-24 sm:py-32">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-16 items-center">
+        <div class="reveal">
+          <span class="font-display text-xs tracking-[0.3em] uppercase text-wine" data-i18n="location.eyebrow">Location</span>
+          <h2 class="mt-4 font-display font-light uppercase tracking-[0.04em] text-3xl sm:text-4xl leading-tight" data-i18n="location.heading">
+            Nestled in Valle de<br>Guadalupe
+          </h2>
+          <p class="mt-6 text-ink/80 leading-relaxed" data-i18n="location.desc">
+            Aroma Events sits among the vineyards of Valle de Guadalupe, Baja California — Mexico's wine country. Rolling hills, open sky, and a short drive from Ensenada or the US border make it an easy escape for a gathering worth remembering.
+          </p>
+
+          <ul class="mt-8 space-y-4 text-sm">
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-wine shrink-0 mt-0.5"><use href="#icon-pin"/></svg>
+              <!-- Placeholder address — replace with your exact venue address -->
+              <span class="text-ink/80" data-i18n="location.address">Valle de Guadalupe, Ensenada, Baja California, Mexico</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-wine shrink-0 mt-0.5"><use href="#icon-phone"/></svg>
+              <span class="text-ink/80">+52 646 000 0000</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-wine shrink-0 mt-0.5"><use href="#icon-mail"/></svg>
+              <span class="text-ink/80">hello@aromaevents.mx</span>
+            </li>
+          </ul>
+
+          <a href="https://www.google.com/maps/search/?api=1&query=Valle+de+Guadalupe+Baja+California+Mexico" target="_blank" rel="noopener noreferrer" data-i18n="location.directions" class="mt-9 inline-flex items-center h-12 px-7 bg-wine text-cream font-display text-xs tracking-[0.2em] uppercase hover:bg-wine-dark transition-colors duration-200">
+            Get Directions
+          </a>
+        </div>
+
+        <!-- Stylized map graphic in place of an embedded map -->
+        <div class="reveal relative aspect-[4/3] bg-cream-alt overflow-hidden">
+          <svg viewBox="0 0 400 300" class="w-full h-full text-terracotta-dark/40" aria-hidden="true">
+            <path d="M0 210 C 80 180 140 220 220 190 C 300 160 340 200 400 175" stroke="currentColor" stroke-width="2" fill="none"/>
+            <path d="M0 250 C 90 230 160 260 240 235 C 320 210 360 240 400 220" stroke="currentColor" stroke-width="2" fill="none"/>
+            <path d="M20 40 L 380 260" stroke="currentColor" stroke-width="1" stroke-dasharray="6 6" opacity="0.6"/>
+          </svg>
+          <div class="absolute inset-0 flex items-center justify-center">
+            <svg viewBox="0 0 200 200" class="w-16 h-16">
+              <use href="#wineStainRing"/>
+            </svg>
+          </div>
+          <span class="absolute top-4 left-4 font-display text-[10px] tracking-[0.25em] uppercase text-ink/60" data-i18n="location.mapLabel">Baja Norte, Mexico</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ INQUIRE ============ -->
+    <section id="inquire" class="py-24 sm:py-32 bg-wine text-cream relative overflow-hidden">
+      <svg class="hero-rings absolute -left-32 -bottom-32 w-[420px] h-[420px] text-cream/10 hidden sm:block" viewBox="0 0 400 400" aria-hidden="true">
+        <circle cx="200" cy="200" r="190" stroke-width="1"/>
+        <circle cx="200" cy="200" r="150" stroke-width="1"/>
+      </svg>
+
+      <div class="max-w-5xl mx-auto px-6 lg:px-10 relative">
+        <div class="max-w-xl reveal">
+          <span class="font-display text-xs tracking-[0.3em] uppercase text-terracotta" data-i18n="inquire.eyebrow">Plan Your Event</span>
+          <h2 class="mt-4 font-display font-light uppercase tracking-[0.04em] text-3xl sm:text-4xl leading-tight" data-i18n="inquire.heading">
+            Let's uncork something<br>together
+          </h2>
+          <p class="mt-6 text-cream/80 leading-relaxed" data-i18n="inquire.desc">
+            Tell us a little about your occasion and we'll follow up to talk dates, spaces, and what's possible.
+          </p>
+        </div>
+
+        <form id="inquiry-form" class="reveal mt-12 grid sm:grid-cols-2 gap-6" novalidate>
+          <div class="flex flex-col gap-2">
+            <label for="name" class="font-display text-xs tracking-[0.15em] uppercase text-cream/80" data-i18n="form.name">Full Name</label>
+            <input id="name" name="name" type="text" required autocomplete="name" data-i18n-placeholder="form.name.placeholder" class="h-12 px-4 bg-cream/10 border border-cream/30 text-cream placeholder:text-cream/40 focus:border-cream focus:bg-cream/15 transition-colors" placeholder="Your name">
+          </div>
+          <div class="flex flex-col gap-2">
+            <label for="email" class="font-display text-xs tracking-[0.15em] uppercase text-cream/80" data-i18n="form.email">Email</label>
+            <input id="email" name="email" type="email" required autocomplete="email" data-i18n-placeholder="form.email.placeholder" class="h-12 px-4 bg-cream/10 border border-cream/30 text-cream placeholder:text-cream/40 focus:border-cream focus:bg-cream/15 transition-colors" placeholder="you@email.com">
+          </div>
+          <div class="flex flex-col gap-2">
+            <label for="event-date" class="font-display text-xs tracking-[0.15em] uppercase text-cream/80" data-i18n="form.date">Event Date</label>
+            <input id="event-date" name="event-date" type="date" class="h-12 px-4 bg-cream/10 border border-cream/30 text-cream focus:border-cream focus:bg-cream/15 transition-colors">
+          </div>
+          <div class="flex flex-col gap-2">
+            <label for="guests" class="font-display text-xs tracking-[0.15em] uppercase text-cream/80" data-i18n="form.guests">Estimated Guests</label>
+            <select id="guests" name="guests" class="h-12 px-4 bg-cream/10 border border-cream/30 text-cream focus:border-cream focus:bg-cream/15 transition-colors">
+              <option value="" class="text-ink" data-i18n="form.guests.select">Select a range</option>
+              <option value="1-20" class="text-ink">1–20</option>
+              <option value="21-50" class="text-ink">21–50</option>
+              <option value="51-100" class="text-ink">51–100</option>
+              <option value="101-200" class="text-ink">101–200</option>
+              <option value="200+" class="text-ink">200+</option>
+            </select>
+          </div>
+          <div class="sm:col-span-2 flex flex-col gap-2">
+            <label for="event-type" class="font-display text-xs tracking-[0.15em] uppercase text-cream/80" data-i18n="form.type">Type of Event</label>
+            <select id="event-type" name="event-type" class="h-12 px-4 bg-cream/10 border border-cream/30 text-cream focus:border-cream focus:bg-cream/15 transition-colors">
+              <option value="" class="text-ink" data-i18n="form.type.select">Select an occasion</option>
+              <option value="wedding" class="text-ink" data-i18n="form.type.wedding">Wedding</option>
+              <option value="wine-dinner" class="text-ink" data-i18n="form.type.winedinner">Wine Dinner / Tasting</option>
+              <option value="corporate" class="text-ink" data-i18n="form.type.corporate">Corporate Retreat</option>
+              <option value="celebration" class="text-ink" data-i18n="form.type.celebration">Milestone Celebration</option>
+              <option value="rehearsal" class="text-ink" data-i18n="form.type.rehearsal">Rehearsal Dinner</option>
+              <option value="private" class="text-ink" data-i18n="form.type.private">Private Gathering</option>
+            </select>
+          </div>
+          <div class="sm:col-span-2 flex flex-col gap-2">
+            <label for="message" class="font-display text-xs tracking-[0.15em] uppercase text-cream/80" data-i18n="form.message">Tell us more</label>
+            <textarea id="message" name="message" rows="4" data-i18n-placeholder="form.message.placeholder" class="px-4 py-3 bg-cream/10 border border-cream/30 text-cream placeholder:text-cream/40 focus:border-cream focus:bg-cream/15 transition-colors" placeholder="Share a bit about the occasion you're imagining"></textarea>
+          </div>
+
+          <div class="sm:col-span-2">
+            <button type="submit" data-i18n="form.submit" class="inline-flex items-center h-12 px-8 bg-cream text-wine font-display text-xs tracking-[0.2em] uppercase hover:bg-cream-alt transition-colors duration-200">
+              Send Inquiry
+            </button>
+            <p id="form-status" role="status" class="hidden mt-4 text-sm text-cream/90"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="py-16 border-t border-ink/10">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 flex flex-col md:flex-row md:items-start md:justify-between gap-10">
+      <div>
+        <div class="flex items-center gap-3">
+          <svg viewBox="0 0 200 200" class="w-7 h-7">
+            <use href="#wineStainRing"/>
+          </svg>
+          <span class="leading-tight">
+            <span class="block font-display font-medium tracking-[0.3em] text-base">AROMA</span>
+            <span class="block font-display text-[9px] tracking-[0.25em] text-wine -mt-0.5">VALLE DE GUADALUPE</span>
+          </span>
+        </div>
+        <p class="mt-4 text-sm text-ink/60 max-w-xs" data-i18n="footer.tagline">Celebrating the aroma of life — a private event space in Mexico's wine country.</p>
+        <div class="mt-6 flex items-center gap-4 text-ink/60">
+          <a href="#" aria-label="Instagram" class="w-11 h-11 flex items-center justify-center hover:text-wine transition-colors"><svg class="w-5 h-5"><use href="#icon-instagram"/></svg></a>
+          <a href="#" aria-label="Facebook" class="w-11 h-11 flex items-center justify-center hover:text-wine transition-colors"><svg class="w-5 h-5"><use href="#icon-facebook"/></svg></a>
+          <a href="#" aria-label="WhatsApp" class="w-11 h-11 flex items-center justify-center hover:text-wine transition-colors"><svg class="w-5 h-5"><use href="#icon-whatsapp"/></svg></a>
+        </div>
+      </div>
+
+      <nav class="grid grid-cols-2 gap-x-12 gap-y-3 font-display text-xs tracking-[0.15em] uppercase text-ink/70" data-i18n-aria="aria.footerNav" aria-label="Footer">
+        <a href="#space" data-i18n="nav.space" class="hover:text-wine transition-colors">The Space</a>
+        <a href="#experiences" data-i18n="nav.experiences" class="hover:text-wine transition-colors">Experiences</a>
+        <a href="#gallery" data-i18n="nav.gallery" class="hover:text-wine transition-colors">Gallery</a>
+        <a href="#location" data-i18n="nav.location" class="hover:text-wine transition-colors">Location</a>
+        <a href="#inquire" data-i18n="nav.inquire" class="hover:text-wine transition-colors">Inquire</a>
+      </nav>
+    </div>
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 mt-12 pt-6 border-t border-ink/10 text-xs text-ink/50">
+      © <span id="current-year"></span> Aroma Events. <span data-i18n="footer.rights">All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
