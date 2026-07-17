@@ -102,7 +102,7 @@
     "form.message.placeholder": "Share a bit about the occasion you’re imagining",
     "form.submit": "Send Inquiry",
     "form.status.success": "Thank you — we've received your inquiry and will be in touch soon.",
-    "form.status.error": "Something went wrong sending your inquiry. Please email us at hola@aromavdg.com or call +52 663 438 1236.",
+    "form.status.error": "Something went wrong sending your inquiry. Please email us at hola@aromavdg.com.",
     "footer.tagline": "Celebrating the aroma of life — a private event space in Mexico’s wine country.",
     "footer.rights": "All rights reserved."
   },
@@ -209,7 +209,7 @@
     "form.message.placeholder": "Cuéntanos un poco sobre la ocasión que imaginas",
     "form.submit": "Enviar Solicitud",
     "form.status.success": "Gracias — hemos recibido tu solicitud y te contactaremos pronto.",
-    "form.status.error": "Hubo un problema al enviar tu solicitud. Escríbenos a hola@aromavdg.com o llámanos al +52 663 438 1236.",
+    "form.status.error": "Hubo un problema al enviar tu solicitud. Escríbenos a hola@aromavdg.com.",
     "footer.tagline": "Celebrando el aroma de la vida — un espacio privado para eventos en la región vinícola de México.",
     "footer.rights": "Todos los derechos reservados."
   }
