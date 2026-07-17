@@ -546,7 +546,7 @@
           </p>
         </div>
 
-        <form id="inquiry-form" class="reveal mt-12 grid sm:grid-cols-2 gap-6" novalidate>
+        <form id="inquiry-form" action="https://formspree.io/f/mpqvpeyj" method="POST" class="reveal mt-12 grid sm:grid-cols-2 gap-6" novalidate>
           <div class="flex flex-col gap-2">
             <label for="name" class="font-display text-xs tracking-[0.15em] uppercase text-cream/80" data-i18n="form.name">Full Name</label>
             <input id="name" name="name" type="text" required autocomplete="name" data-i18n-placeholder="form.name.placeholder" class="h-12 px-4 bg-cream/10 border border-cream/30 text-cream placeholder:text-cream/40 focus:border-cream focus:bg-cream/15 transition-colors" placeholder="Your name">
@@ -591,7 +591,8 @@
             <button type="submit" data-i18n="form.submit" class="inline-flex items-center h-12 px-8 bg-cream text-wine font-display text-xs tracking-[0.2em] uppercase hover:bg-cream-alt transition-colors duration-200">
               Send Inquiry
             </button>
-            <p id="form-status" role="status" data-i18n="form.status.success" class="hidden mt-4 text-sm text-cream/90">Thank you — your inquiry details are ready. Connect this form to your email service to start receiving submissions.</p>
+            <p id="form-status" role="status" data-i18n="form.status.success" class="hidden mt-4 text-sm text-cream/90">Thank you — we've received your inquiry and will be in touch soon.</p>
+            <p id="form-error" role="alert" data-i18n="form.status.error" class="hidden mt-4 text-sm text-cream/90">Something went wrong sending your inquiry. Please email us at hola@aromavdg.com or call +52 663 438 1236.</p>
           </div>
         </form>
       </div>

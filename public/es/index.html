@@ -559,7 +559,7 @@
           <p class="mt-6 text-cream/80 leading-relaxed" data-i18n="inquire.desc">Cuéntanos un poco sobre tu ocasión y te contactaremos para hablar de fechas, espacios y posibilidades.</p>
         </div>
 
-        <form id="inquiry-form" class="reveal mt-12 grid sm:grid-cols-2 gap-6" novalidate="">
+        <form id="inquiry-form" action="https://formspree.io/f/mpqvpeyj" method="POST" class="reveal mt-12 grid sm:grid-cols-2 gap-6" novalidate="">
           <div class="flex flex-col gap-2">
             <label for="name" class="font-display text-xs tracking-[0.15em] uppercase text-cream/80" data-i18n="form.name">Nombre Completo</label>
             <input id="name" name="name" type="text" required="" autocomplete="name" data-i18n-placeholder="form.name.placeholder" class="h-12 px-4 bg-cream/10 border border-cream/30 text-cream placeholder:text-cream/40 focus:border-cream focus:bg-cream/15 transition-colors" placeholder="Tu nombre">
@@ -602,7 +602,8 @@
 
           <div class="sm:col-span-2">
             <button type="submit" data-i18n="form.submit" class="inline-flex items-center h-12 px-8 bg-cream text-wine font-display text-xs tracking-[0.2em] uppercase hover:bg-cream-alt transition-colors duration-200">Enviar Solicitud</button>
-            <p id="form-status" role="status" data-i18n="form.status.success" class="hidden mt-4 text-sm text-cream/90">Gracias — los detalles de tu solicitud están listos. Conecta este formulario a tu servicio de correo para empezar a recibir mensajes.</p>
+            <p id="form-status" role="status" data-i18n="form.status.success" class="hidden mt-4 text-sm text-cream/90">Gracias — hemos recibido tu solicitud y te contactaremos pronto.</p>
+            <p id="form-error" role="alert" data-i18n="form.status.error" class="hidden mt-4 text-sm text-cream/90">Hubo un problema al enviar tu solicitud. Escríbenos a hola@aromavdg.com o llámanos al +52 663 438 1236.</p>
           </div>
         </form>
       </div>

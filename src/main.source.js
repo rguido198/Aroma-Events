@@ -67,9 +67,10 @@
   var yearEl = document.getElementById('current-year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-  // Inquiry form — no backend wired up yet; show a friendly inline confirmation.
+  // Inquiry form — submits to Formspree via fetch so the page never navigates away.
   var form = document.getElementById('inquiry-form');
   var formStatus = document.getElementById('form-status');
+  var formError = document.getElementById('form-error');
   if (form) {
     form.addEventListener('submit', function (e) {
       e.preventDefault();
@@ -77,8 +78,31 @@
         form.reportValidity();
         return;
       }
-      formStatus.classList.remove('hidden');
-      form.reset();
+      formStatus.classList.add('hidden');
+      formError.classList.add('hidden');
+
+      var submitBtn = form.querySelector('button[type="submit"]');
+      if (submitBtn) submitBtn.disabled = true;
+
+      fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { Accept: 'application/json' }
+      })
+        .then(function (response) {
+          if (response.ok) {
+            formStatus.classList.remove('hidden');
+            form.reset();
+          } else {
+            formError.classList.remove('hidden');
+          }
+        })
+        .catch(function () {
+          formError.classList.remove('hidden');
+        })
+        .finally(function () {
+          if (submitBtn) submitBtn.disabled = false;
+        });
     });
   }
 })();
