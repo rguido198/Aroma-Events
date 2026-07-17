@@ -1,18 +1,13 @@
 // One-off build script: generates public/es/index.html as a real, server-rendered
 // Spanish page from the same public/index.html + the `es` translation dictionary
-// already used by public/js/i18n.js client-side toggle — so both stay in sync from
-// one source of truth. Run with: node src/build-es.mjs
+// in translations.json — so both language pages stay in sync from one source of truth.
+// Run with: node src/build-es.mjs
 
 import * as cheerio from 'cheerio';
 import fs from 'node:fs';
 
 const html = fs.readFileSync('public/index.html', 'utf8');
-const i18nSource = fs.readFileSync('src/i18n.source.js', 'utf8');
-
-// Pull the `translations` object literal out of i18n.js and evaluate it (trusted, local file).
-const match = i18nSource.match(/var translations = (\{[\s\S]*?\n  \};)/);
-if (!match) throw new Error('Could not find translations object in i18n.source.js');
-const translations = new Function(`return ${match[1]}`)();
+const translations = JSON.parse(fs.readFileSync('src/translations.json', 'utf8'));
 const dict = translations.es;
 
 const $ = cheerio.load(html, { decodeEntities: false });

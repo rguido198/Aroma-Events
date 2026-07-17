@@ -77,10 +77,6 @@
         form.reportValidity();
         return;
       }
-      var message = window.AromaI18n
-        ? window.AromaI18n.t('form.status.success')
-        : 'Thank you — your inquiry details are ready. Connect this form to your email service to start receiving submissions.';
-      formStatus.textContent = message;
       formStatus.classList.remove('hidden');
       form.reset();
     });
