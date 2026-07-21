@@ -27,7 +27,7 @@
       "slugEs": "bodas",
       "icon": "icon-sparkle",
       "recommendedSpaces": ["terrace", "courtyard"],
-      "relatedExperiences": ["rehearsal-dinners", "wine-dinners-tastings"],
+      "relatedExperiences": ["rehearsal-dinners", "wine-dinners-tastings", "milestone-celebrations"],
       "en": {
         "metaTitle": "Wedding Venue in Valle de Guadalupe | Aroma Events",
         "metaDescription": "Host your wedding ceremony and reception on a vineyard terrace in Valle de Guadalupe, Baja California. Space for 20–200 guests at Aroma Events.",
@@ -102,7 +102,7 @@
       "slugEs": "cenas-y-catas-de-vino",
       "icon": "icon-glass",
       "recommendedSpaces": ["barrel", "courtyard"],
-      "relatedExperiences": ["rehearsal-dinners", "corporate-retreats"],
+      "relatedExperiences": ["rehearsal-dinners", "corporate-retreats", "milestone-celebrations"],
       "en": {
         "metaTitle": "Wine Dinner & Tasting Venue in Valle de Guadalupe | Aroma Events",
         "metaDescription": "Seated wine dinners and guided tastings among the barrels at Aroma Events, Valle de Guadalupe. Intimate space for up to 45 guests.",
@@ -175,7 +175,7 @@
       "slugEs": "retiros-corporativos",
       "icon": "icon-users",
       "recommendedSpaces": ["courtyard", "terrace"],
-      "relatedExperiences": ["wine-dinners-tastings", "private-gatherings"],
+      "relatedExperiences": ["wine-dinners-tastings", "private-gatherings", "milestone-celebrations"],
       "en": {
         "metaTitle": "Corporate Retreat & Offsite Venue in Valle de Guadalupe | Aroma Events",
         "metaDescription": "Trade the conference room for open sky. Host a corporate offsite, team retreat, or client dinner at Aroma Events in Valle de Guadalupe.",
@@ -248,7 +248,7 @@
       "slugEs": "celebraciones-especiales",
       "icon": "icon-sun",
       "recommendedSpaces": ["courtyard", "terrace"],
-      "relatedExperiences": ["wine-dinners-tastings", "private-gatherings"],
+      "relatedExperiences": ["wine-dinners-tastings", "private-gatherings", "weddings"],
       "en": {
         "metaTitle": "Milestone Celebration Venue in Valle de Guadalupe | Aroma Events",
         "metaDescription": "Birthdays, anniversaries, and reunions among the vines. Host your milestone celebration at Aroma Events in Valle de Guadalupe, Baja California.",
@@ -321,7 +321,7 @@
       "slugEs": "cenas-de-ensayo",
       "icon": "icon-leaf",
       "recommendedSpaces": ["barrel", "courtyard"],
-      "relatedExperiences": ["weddings", "wine-dinners-tastings"],
+      "relatedExperiences": ["weddings", "wine-dinners-tastings", "milestone-celebrations"],
       "en": {
         "metaTitle": "Rehearsal Dinner Venue in Valle de Guadalupe | Aroma Events",
         "metaDescription": "Host your rehearsal dinner in the candlelit Barrel Room at Aroma Events, Valle de Guadalupe — the night before your wedding, done right.",
@@ -394,7 +394,7 @@
       "slugEs": "reuniones-privadas",
       "icon": "icon-calendar",
       "recommendedSpaces": ["barrel", "courtyard", "terrace"],
-      "relatedExperiences": ["milestone-celebrations", "wine-dinners-tastings"],
+      "relatedExperiences": ["milestone-celebrations", "wine-dinners-tastings", "corporate-retreats"],
       "en": {
         "metaTitle": "Private Event Space in Valle de Guadalupe | Aroma Events",
         "metaDescription": "Bring your own reason to celebrate. Aroma Events offers flexible private event space in Valle de Guadalupe, Baja California, for groups of 10 to 200.",

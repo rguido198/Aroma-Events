@@ -307,7 +307,7 @@ function renderExperiencePage(exp, lang) {
         </div>
 
         <h2 class="mt-12 font-display text-xl tracking-[0.08em] uppercase">${s.related}</h2>
-        <div class="mt-6 grid sm:grid-cols-2 gap-6">
+        <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           ${relatedHtml}
         </div>
 
