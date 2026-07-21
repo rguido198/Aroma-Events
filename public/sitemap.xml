@@ -17,4 +17,116 @@
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>
+    <loc>https://aromavalledeguadalupe.com/weddings/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aromavalledeguadalupe.com/weddings/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aromavalledeguadalupe.com/es/weddings/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aromavalledeguadalupe.com/weddings/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aromavalledeguadalupe.com/es/weddings/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aromavalledeguadalupe.com/weddings/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aromavalledeguadalupe.com/es/weddings/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aromavalledeguadalupe.com/weddings/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aromavalledeguadalupe.com/wine-dinners-tastings/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aromavalledeguadalupe.com/wine-dinners-tastings/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aromavalledeguadalupe.com/es/wine-dinners-tastings/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aromavalledeguadalupe.com/wine-dinners-tastings/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aromavalledeguadalupe.com/es/wine-dinners-tastings/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aromavalledeguadalupe.com/wine-dinners-tastings/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aromavalledeguadalupe.com/es/wine-dinners-tastings/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aromavalledeguadalupe.com/wine-dinners-tastings/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aromavalledeguadalupe.com/corporate-retreats/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aromavalledeguadalupe.com/corporate-retreats/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aromavalledeguadalupe.com/es/corporate-retreats/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aromavalledeguadalupe.com/corporate-retreats/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aromavalledeguadalupe.com/es/corporate-retreats/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aromavalledeguadalupe.com/corporate-retreats/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aromavalledeguadalupe.com/es/corporate-retreats/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aromavalledeguadalupe.com/corporate-retreats/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aromavalledeguadalupe.com/milestone-celebrations/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aromavalledeguadalupe.com/milestone-celebrations/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aromavalledeguadalupe.com/es/milestone-celebrations/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aromavalledeguadalupe.com/milestone-celebrations/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aromavalledeguadalupe.com/es/milestone-celebrations/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aromavalledeguadalupe.com/milestone-celebrations/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aromavalledeguadalupe.com/es/milestone-celebrations/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aromavalledeguadalupe.com/milestone-celebrations/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aromavalledeguadalupe.com/rehearsal-dinners/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aromavalledeguadalupe.com/rehearsal-dinners/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aromavalledeguadalupe.com/es/rehearsal-dinners/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aromavalledeguadalupe.com/rehearsal-dinners/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aromavalledeguadalupe.com/es/rehearsal-dinners/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aromavalledeguadalupe.com/rehearsal-dinners/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aromavalledeguadalupe.com/es/rehearsal-dinners/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aromavalledeguadalupe.com/rehearsal-dinners/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aromavalledeguadalupe.com/private-gatherings/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aromavalledeguadalupe.com/private-gatherings/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aromavalledeguadalupe.com/es/private-gatherings/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aromavalledeguadalupe.com/private-gatherings/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aromavalledeguadalupe.com/es/private-gatherings/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aromavalledeguadalupe.com/private-gatherings/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aromavalledeguadalupe.com/es/private-gatherings/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aromavalledeguadalupe.com/private-gatherings/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aromavalledeguadalupe.com/event-planning-checklist/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aromavalledeguadalupe.com/event-planning-checklist/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aromavalledeguadalupe.com/es/event-planning-checklist/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aromavalledeguadalupe.com/event-planning-checklist/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aromavalledeguadalupe.com/es/event-planning-checklist/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aromavalledeguadalupe.com/event-planning-checklist/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aromavalledeguadalupe.com/es/event-planning-checklist/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aromavalledeguadalupe.com/event-planning-checklist/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>

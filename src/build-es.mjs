@@ -65,5 +65,20 @@ out = out
   .replace(/src="js\//g, 'src="../js/')
   .replace(/href="assets\/favicon\.svg"/g, 'href="../assets/favicon.svg"');
 
+// Point links to the programmatic experience/checklist pages at their /es/ mirrors
+// (same slug in both locales — see src/build-pages.mjs — so a simple prefix works).
+const PROGRAMMATIC_SLUGS = [
+  'weddings',
+  'wine-dinners-tastings',
+  'corporate-retreats',
+  'milestone-celebrations',
+  'rehearsal-dinners',
+  'private-gatherings',
+  'event-planning-checklist'
+];
+for (const slug of PROGRAMMATIC_SLUGS) {
+  out = out.replace(new RegExp(`href="/${slug}/"`, 'g'), `href="/es/${slug}/"`);
+}
+
 fs.writeFileSync('public/es/index.html', out);
 console.log('Wrote public/es/index.html (' + out.length + ' bytes)');

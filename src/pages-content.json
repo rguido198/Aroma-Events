@@ -1,0 +1,585 @@
+{
+  "spaces": {
+    "terrace": {
+      "icon": "icon-sun",
+      "image": "space-terrace.webp",
+      "en": { "name": "The Vineyard Terrace", "guests": "Up to 200 guests" },
+      "es": { "name": "La Terraza del Viñedo", "guests": "Hasta 200 invitados" }
+    },
+    "barrel": {
+      "icon": "icon-glass",
+      "image": "space-barrel-room.webp",
+      "en": { "name": "The Barrel Room", "guests": "Up to 45 guests" },
+      "es": { "name": "La Sala de Barricas", "guests": "Hasta 45 invitados" }
+    },
+    "courtyard": {
+      "icon": "icon-leaf",
+      "image": "space-courtyard.webp",
+      "en": { "name": "The Garden Courtyard", "guests": "Up to 90 guests" },
+      "es": { "name": "El Patio del Jardín", "guests": "Hasta 90 invitados" }
+    }
+  },
+
+  "experiences": [
+    {
+      "key": "weddings",
+      "slugEn": "weddings",
+      "slugEs": "bodas",
+      "icon": "icon-sparkle",
+      "recommendedSpaces": ["terrace", "courtyard"],
+      "relatedExperiences": ["rehearsal-dinners", "wine-dinners-tastings"],
+      "en": {
+        "metaTitle": "Wedding Venue in Valle de Guadalupe | Aroma Events",
+        "metaDescription": "Host your wedding ceremony and reception on a vineyard terrace in Valle de Guadalupe, Baja California. Space for 20–200 guests at Aroma Events.",
+        "ogDescription": "A vineyard ceremony at golden hour, a reception that lingers under string lights — weddings at Aroma Events, Valle de Guadalupe.",
+        "eyebrow": "Weddings",
+        "h1": "Weddings at Aroma Events",
+        "subhead": "A vineyard ceremony at golden hour, a reception that lingers under string lights — set among the vines of Valle de Guadalupe.",
+        "heroImage": "space-terrace.webp",
+        "heroAlt": "Rows of grapevines on a sloping vineyard hillside at golden hour",
+        "intro": "Weddings at Aroma Events move the way the valley does — unhurried. Vows are exchanged on the Vineyard Terrace as the light turns gold over the rows, guests move into cocktail hour, and the evening settles into a long table dinner under open sky. Whether you're planning an intimate elopement for twenty or a full celebration for two hundred, the space is built to hold both the ceremony and the reception without asking your guests to travel between venues.",
+        "sections": [
+          {
+            "heading": "The Day, Loosely Planned",
+            "paragraphs": [
+              "Most weddings here follow a similar rhythm: an afternoon ceremony on the terrace timed to the valley's golden hour, a cocktail hour that can spill into the Garden Courtyard, and a reception that carries into the evening under string lights. Because the terrace holds both moments, your guests never have to relocate between ceremony and reception — a detail that matters more than it sounds like it should when you're managing a wedding-day timeline.",
+              "The pace is yours to set: some couples want a tightly scheduled evening with a clear runway from vows to first dance; others want the kind of loose, wine-poured evening that runs late because no one wants to leave. Talk with our team about the flow that fits your guest list and vision."
+            ]
+          }
+        ],
+        "recommendedIntro": "The Vineyard Terrace is the natural setting for both ceremony and reception — open-air, framed by vine rows, and built for exactly this. For cocktail hour or a smaller daytime reception, the Garden Courtyard offers a shaded, adobe-walled alternative. Hosting a rehearsal dinner the night before? The candlelit Barrel Room is a natural fit.",
+        "goodToKnow": [
+          "Guest capacity: 20–200",
+          "Best months for an outdoor ceremony: the valley's dry season, roughly April–November",
+          "Golden-hour ceremonies typically start in the late afternoon",
+          "Valle de Guadalupe is about 40 minutes from Ensenada and under two hours from the US border — worth building into your guest communications",
+          "Vendors, catering, and wine service vary by event — get in touch and we'll talk through what's possible for your date"
+        ],
+        "faq": [
+          { "q": "How many guests can Aroma Events hold for a wedding?", "a": "The Vineyard Terrace holds up to 200 guests for ceremony and reception. Smaller weddings can use the Garden Courtyard (up to 90) or the Barrel Room (up to 45)." },
+          { "q": "Can we hold both the ceremony and reception on site?", "a": "Yes — the Vineyard Terrace is designed to host both without moving guests between locations." },
+          { "q": "Is Aroma Events a good fit for a destination wedding?", "a": "Many couples treat it as one, given the setting in Mexico's wine country. Ensenada and the surrounding valley have lodging options for out-of-town guests — reach out and we can talk through logistics for your date." }
+        ]
+      },
+      "es": {
+        "metaTitle": "Sede para Bodas en Valle de Guadalupe | Aroma Events",
+        "metaDescription": "Celebra tu ceremonia y recepción de boda en una terraza entre los viñedos de Valle de Guadalupe, Baja California. Espacio para 20–200 invitados en Aroma Events.",
+        "ogDescription": "Una ceremonia entre las vides a la hora dorada, una recepción que se alarga bajo las luces — bodas en Aroma Events, Valle de Guadalupe.",
+        "eyebrow": "Bodas",
+        "h1": "Bodas en Aroma Events",
+        "subhead": "Una ceremonia entre las vides a la hora dorada, una recepción que se alarga bajo las luces — en pleno Valle de Guadalupe.",
+        "heroImage": "space-terrace.webp",
+        "heroAlt": "Hileras de vides en una ladera del viñedo durante la hora dorada",
+        "intro": "Las bodas en Aroma Events avanzan al ritmo del valle — sin prisa. Los votos se intercambian en la Terraza del Viñedo mientras la luz se vuelve dorada sobre las hileras de vides, los invitados pasan al cóctel y la noche se instala en una cena de mesa larga bajo el cielo abierto. Ya sea una fuga íntima para veinte personas o una celebración completa para doscientas, el espacio está pensado para albergar la ceremonia y la recepción sin pedirles a tus invitados que se trasladen entre sedes.",
+        "sections": [
+          {
+            "heading": "El Día, Sin Guion Rígido",
+            "paragraphs": [
+              "La mayoría de las bodas aquí siguen un ritmo parecido: una ceremonia por la tarde en la terraza, coordinada con la hora dorada del valle, un cóctel que puede extenderse hasta el Patio del Jardín, y una recepción que continúa hacia la noche bajo las luces. Como la terraza puede albergar ambos momentos, tus invitados nunca tienen que trasladarse entre la ceremonia y la recepción — un detalle que importa más de lo que parece cuando estás organizando el itinerario del día.",
+              "El ritmo lo decides tú: algunas parejas quieren una noche con horarios claros, del \"sí, acepto\" al primer baile; otras prefieren una velada relajada, con vino de por medio, que se alarga porque nadie quiere irse. Cuéntanos qué imaginas y lo planeamos juntos."
+            ]
+          }
+        ],
+        "recommendedIntro": "La Terraza del Viñedo es el entorno natural para la ceremonia y la recepción — al aire libre, enmarcada por las hileras de vides, pensada justamente para esto. Para el cóctel o una recepción diurna más pequeña, el Patio del Jardín ofrece una alternativa con sombra y muros de adobe. ¿Vas a celebrar una cena de ensayo la noche anterior? La Sala de Barricas, iluminada con velas, es una opción natural.",
+        "goodToKnow": [
+          "Capacidad: 20–200 invitados",
+          "Mejores meses para una ceremonia al aire libre: temporada seca del valle, aproximadamente de abril a noviembre",
+          "Las ceremonias a la hora dorada suelen comenzar por la tarde",
+          "Valle de Guadalupe está a unos 40 minutos de Ensenada y a menos de dos horas de la frontera con Estados Unidos — vale la pena considerarlo al comunicarte con tus invitados",
+          "Proveedores, banquetes y servicio de vino varían según el evento — contáctanos y hablamos de lo que es posible para tu fecha"
+        ],
+        "faq": [
+          { "q": "¿Cuántos invitados puede recibir Aroma Events para una boda?", "a": "La Terraza del Viñedo tiene capacidad para 200 invitados en ceremonia y recepción. Bodas más pequeñas pueden usar el Patio del Jardín (hasta 90) o la Sala de Barricas (hasta 45)." },
+          { "q": "¿Podemos hacer la ceremonia y la recepción en el mismo lugar?", "a": "Sí — la Terraza del Viñedo está diseñada para albergar ambas sin que los invitados tengan que trasladarse." },
+          { "q": "¿Aroma Events es una buena opción para una boda de destino?", "a": "Muchas parejas la eligen justamente por eso, dado su entorno en la región vinícola de México. Ensenada y sus alrededores tienen opciones de hospedaje para invitados que viajan — contáctanos y hablamos de la logística para tu fecha." }
+        ]
+      }
+    },
+
+    {
+      "key": "wine-dinners-tastings",
+      "slugEn": "wine-dinners-tastings",
+      "slugEs": "cenas-y-catas-de-vino",
+      "icon": "icon-glass",
+      "recommendedSpaces": ["barrel", "courtyard"],
+      "relatedExperiences": ["rehearsal-dinners", "corporate-retreats"],
+      "en": {
+        "metaTitle": "Wine Dinner & Tasting Venue in Valle de Guadalupe | Aroma Events",
+        "metaDescription": "Seated wine dinners and guided tastings among the barrels at Aroma Events, Valle de Guadalupe. Intimate space for up to 45 guests.",
+        "ogDescription": "Long tables, unhurried courses, and pours timed to conversation — wine dinners and tastings at Aroma Events.",
+        "eyebrow": "Wine Dinners & Tastings",
+        "h1": "Wine Dinners & Tastings",
+        "subhead": "Seated dinners and guided tastings that put the valley's wine at the center of the table.",
+        "heroImage": "space-barrel-room.webp",
+        "heroAlt": "Stacked wine barrels in a dim, candlelit cellar room",
+        "intro": "Valle de Guadalupe is Mexico's wine country, and a wine dinner here is less an event than a continuation of the place itself. Long tables, unhurried courses, and pours timed to conversation rather than a clock — Aroma Events is built for the kind of evening where the wine list matters as much as the menu. Whether it's a guided tasting for a small group or a full seated dinner with pairings, the format stays intimate by design.",
+        "sections": [
+          {
+            "heading": "The Format",
+            "paragraphs": [
+              "Most tastings and wine dinners here run as seated, multi-course evenings rather than a walk-around pour — guests stay at the table as courses and wines are introduced together, which keeps the pace relaxed and the conversation continuous. Group sizes tend to stay smaller than a full wedding reception, which is part of what makes the format work: everyone can hear the same story about the same pour.",
+              "Some hosts bring in a sommelier or winemaker to walk the table through each glass; others keep it simpler, with wine chosen to match the season and the menu. Either way, tell us the shape of the evening you're picturing and we'll help you plan around it."
+            ]
+          }
+        ],
+        "recommendedIntro": "The Barrel Room is the natural home for this — candlelit, among the actual barrels, and built at a scale where a single conversation can carry across the table. For a larger tasting or a dinner that wants more open air, the Garden Courtyard can also be set for a seated wine dinner.",
+        "goodToKnow": [
+          "Typical group size: 12–45 for an intimate tasting in the Barrel Room; up to 90 in the Garden Courtyard for a larger dinner",
+          "Format: seated, multi-course, wine-paired dinners or guided tastings",
+          "Works well for: milestone dinners, corporate client entertaining, private groups",
+          "Indoor candlelight in the Barrel Room makes it a reliable option regardless of evening weather"
+        ],
+        "faq": [
+          { "q": "What's the difference between a tasting and a wine dinner here?", "a": "A tasting is typically a guided walk through several wines, often with lighter bites; a wine dinner is a full seated, multi-course meal with wines paired to each course. Both work in the Barrel Room." },
+          { "q": "How many guests fit in the Barrel Room?", "a": "Up to 45 for a seated dinner or tasting." },
+          { "q": "Can a wine dinner double as a private event for a smaller milestone?", "a": "Yes — many hosts use the format for anniversaries, small reunions, or team dinners." }
+        ]
+      },
+      "es": {
+        "metaTitle": "Sede para Cenas y Catas de Vino en Valle de Guadalupe | Aroma Events",
+        "metaDescription": "Cenas de maridaje y catas guiadas entre las barricas en Aroma Events, Valle de Guadalupe. Espacio íntimo para hasta 45 invitados.",
+        "ogDescription": "Mesas largas, tiempos sin prisa y copas que se sirven al ritmo de la conversación — cenas y catas de vino en Aroma Events.",
+        "eyebrow": "Cenas y Catas de Vino",
+        "h1": "Cenas y Catas de Vino",
+        "subhead": "Cenas y catas guiadas que ponen el vino del valle en el centro de la mesa.",
+        "heroImage": "space-barrel-room.webp",
+        "heroAlt": "Barricas de vino apiladas en una sala en penumbra, iluminada con velas",
+        "intro": "Valle de Guadalupe es la región vinícola de México, y una cena de vino aquí es menos un evento que una extensión del lugar mismo. Mesas largas, tiempos sin prisa y copas que se sirven al ritmo de la conversación, no del reloj — Aroma Events está pensado para las noches donde la carta de vinos importa tanto como el menú. Ya sea una cata guiada para un grupo pequeño o una cena completa con maridaje, el formato se mantiene íntimo por diseño.",
+        "sections": [
+          {
+            "heading": "El Formato",
+            "paragraphs": [
+              "La mayoría de las catas y cenas de vino aquí se desarrollan como veladas sentadas, de varios tiempos, en lugar de un recorrido de pie — los invitados permanecen en la mesa mientras se presentan los platillos y los vinos juntos, lo que mantiene el ritmo relajado y la conversación continua. Los grupos suelen ser más pequeños que en una recepción de boda, y eso es justamente parte de lo que hace funcionar el formato: todos escuchan la misma historia sobre la misma copa.",
+              "Algunos anfitriones invitan a un sommelier o enólogo para guiar la mesa copa por copa; otros prefieren algo más sencillo, con vinos elegidos según la temporada y el menú. En cualquier caso, cuéntanos qué tienes en mente y te ayudamos a planearlo."
+            ]
+          }
+        ],
+        "recommendedIntro": "La Sala de Barricas es el entorno natural para esto — iluminada con velas, entre las barricas mismas, y a una escala donde una sola conversación puede recorrer toda la mesa. Para una cata más grande o una cena que busque más aire libre, el Patio del Jardín también se puede montar para una cena de vino sentada.",
+        "goodToKnow": [
+          "Tamaño de grupo habitual: 12–45 para una cata íntima en la Sala de Barricas; hasta 90 en el Patio del Jardín para una cena más grande",
+          "Formato: cenas sentadas de varios tiempos con maridaje, o catas guiadas",
+          "Ideal para: cenas de celebración, atención a clientes corporativos, grupos privados",
+          "La iluminación de velas en la Sala de Barricas la hace una opción confiable sin importar el clima de la noche"
+        ],
+        "faq": [
+          { "q": "¿Cuál es la diferencia entre una cata y una cena de vino aquí?", "a": "Una cata suele ser un recorrido guiado por varios vinos, a menudo con bocados ligeros; una cena de vino es una comida completa, sentada, de varios tiempos, con vinos maridados a cada platillo. Ambas funcionan en la Sala de Barricas." },
+          { "q": "¿Cuántos invitados caben en la Sala de Barricas?", "a": "Hasta 45 para una cena o cata sentada." },
+          { "q": "¿Una cena de vino puede funcionar como evento privado para una celebración más pequeña?", "a": "Sí — muchos anfitriones usan este formato para aniversarios, reuniones pequeñas o cenas de equipo." }
+        ]
+      }
+    },
+
+    {
+      "key": "corporate-retreats",
+      "slugEn": "corporate-retreats",
+      "slugEs": "retiros-corporativos",
+      "icon": "icon-users",
+      "recommendedSpaces": ["courtyard", "terrace"],
+      "relatedExperiences": ["wine-dinners-tastings", "private-gatherings"],
+      "en": {
+        "metaTitle": "Corporate Retreat & Offsite Venue in Valle de Guadalupe | Aroma Events",
+        "metaDescription": "Trade the conference room for open sky. Host a corporate offsite, team retreat, or client dinner at Aroma Events in Valle de Guadalupe.",
+        "ogDescription": "Offsites and team gatherings that trade conference rooms for open sky and good wine — corporate retreats at Aroma Events.",
+        "eyebrow": "Corporate Retreats",
+        "h1": "Corporate Retreats",
+        "subhead": "Offsites and team gatherings that trade conference rooms for open sky and good wine.",
+        "heroImage": "space-courtyard.webp",
+        "heroAlt": "Shaded stone courtyard with bougainvillea and wrought-iron chairs",
+        "intro": "A change of setting changes a meeting. Aroma Events works for teams who want their offsite, planning session, or client dinner to feel like an occasion rather than a rebooked conference room — open-air space, natural light, and a valley that gives people a reason to put their phones down between sessions. It works equally well for a working day that ends in a shared dinner, or a dinner that's the whole point.",
+        "sections": [
+          {
+            "heading": "What It's Good For",
+            "paragraphs": [
+              "Corporate groups here tend to fall into two shapes: a working retreat — planning sessions, team-building, strategy days — that uses the space for focus and unwinds into a group dinner; or a client- or partner-facing event, where the valley itself is part of the pitch.",
+              "The Garden Courtyard's shade and flexible layout suits daytime sessions and working lunches, while the Vineyard Terrace opens up for a larger all-hands or an evening dinner. Because both spaces are outdoors or semi-outdoors, groups coming from Tijuana, San Diego, or Ensenada often treat the drive itself as part of the offsite — a deliberate change of scenery rather than a commute."
+            ]
+          }
+        ],
+        "recommendedIntro": "The Garden Courtyard is well suited to daytime sessions and working meals. For a larger group or an evening dinner component, the Vineyard Terrace has the room. Smaller leadership groups or client dinners often use the Barrel Room instead.",
+        "goodToKnow": [
+          "Guest range: 10–200",
+          "Works well for: team offsites, planning retreats, client entertaining, incentive trips",
+          "AV, seating, and setup needs vary — reach out with your format and we'll talk through what's possible",
+          "Consider drive time from Tijuana, San Diego, or Ensenada when scheduling a working session"
+        ],
+        "faq": [
+          { "q": "Can Aroma Events accommodate a working session with AV or presentation needs?", "a": "Every group's setup is different — get in touch with your format and we'll talk through what's possible." },
+          { "q": "What's the largest group you can host for a corporate event?", "a": "Up to 200 guests on the Vineyard Terrace; smaller formats fit the Garden Courtyard (90) or Barrel Room (45)." },
+          { "q": "Is this a good fit for a client dinner rather than a full retreat?", "a": "Yes — many groups use the Barrel Room or Garden Courtyard for a more intimate, client-facing dinner." }
+        ]
+      },
+      "es": {
+        "metaTitle": "Sede para Retiros Corporativos en Valle de Guadalupe | Aroma Events",
+        "metaDescription": "Cambia la sala de juntas por cielo abierto. Organiza tu retiro corporativo, offsite o cena de negocios en Aroma Events, Valle de Guadalupe.",
+        "ogDescription": "Reuniones de equipo que cambian la sala de juntas por cielo abierto y buen vino — retiros corporativos en Aroma Events.",
+        "eyebrow": "Retiros Corporativos",
+        "h1": "Retiros Corporativos",
+        "subhead": "Reuniones de equipo que cambian la sala de juntas por cielo abierto y buen vino.",
+        "heroImage": "space-courtyard.webp",
+        "heroAlt": "Patio de piedra con sombra, buganvilias y sillas de hierro forjado",
+        "intro": "Un cambio de entorno cambia una reunión. Aroma Events funciona para equipos que quieren que su offsite, sesión de planeación o cena con clientes se sienta como una ocasión y no como una sala de juntas reservada de último momento — espacio al aire libre, luz natural y un valle que le da a la gente motivos para soltar el teléfono entre sesiones. Funciona igual de bien para un día de trabajo que termina en una cena compartida, o una cena que es el evento en sí.",
+        "sections": [
+          {
+            "heading": "Para Qué Funciona",
+            "paragraphs": [
+              "Los grupos corporativos que llegan aquí suelen tomar una de dos formas: un retiro de trabajo — sesiones de planeación, team building, días de estrategia — que usa el espacio para enfocarse y cierra con una cena de grupo; o un evento de cara a clientes o socios, donde el valle mismo forma parte de la propuesta.",
+              "La sombra y el diseño flexible del Patio del Jardín se presta para sesiones diurnas y comidas de trabajo, mientras que la Terraza del Viñedo se abre para una reunión general más grande o una cena nocturna. Como ambos espacios son al aire libre o semiabiertos, los grupos que llegan desde Tijuana, San Diego o Ensenada suelen tratar el propio trayecto como parte del offsite — un cambio de escenario deliberado, no solo un traslado."
+            ]
+          }
+        ],
+        "recommendedIntro": "El Patio del Jardín se presta bien para sesiones diurnas y comidas de trabajo. Para un grupo más grande o una cena nocturna, la Terraza del Viñedo tiene el espacio. Grupos directivos más pequeños o cenas con clientes suelen usar la Sala de Barricas.",
+        "goodToKnow": [
+          "Rango de invitados: 10–200",
+          "Ideal para: offsites de equipo, retiros de planeación, atención a clientes, viajes de incentivo",
+          "Las necesidades de audio, montaje y acomodo varían según el grupo — cuéntanos tu formato y vemos qué es posible",
+          "Considera el tiempo de traslado desde Tijuana, San Diego o Ensenada al planear una sesión de trabajo"
+        ],
+        "faq": [
+          { "q": "¿Aroma Events puede recibir una sesión de trabajo con necesidades de audio o presentaciones?", "a": "Cada grupo tiene necesidades distintas — cuéntanos tu formato y hablamos de lo que es posible." },
+          { "q": "¿Cuál es el grupo más grande que pueden recibir para un evento corporativo?", "a": "Hasta 200 invitados en la Terraza del Viñedo; formatos más pequeños caben en el Patio del Jardín (90) o la Sala de Barricas (45)." },
+          { "q": "¿Es una buena opción para una cena con clientes en lugar de un retiro completo?", "a": "Sí — muchos grupos usan la Sala de Barricas o el Patio del Jardín para una cena más íntima, enfocada en clientes." }
+        ]
+      }
+    },
+
+    {
+      "key": "milestone-celebrations",
+      "slugEn": "milestone-celebrations",
+      "slugEs": "celebraciones-especiales",
+      "icon": "icon-sun",
+      "recommendedSpaces": ["courtyard", "terrace"],
+      "relatedExperiences": ["wine-dinners-tastings", "private-gatherings"],
+      "en": {
+        "metaTitle": "Milestone Celebration Venue in Valle de Guadalupe | Aroma Events",
+        "metaDescription": "Birthdays, anniversaries, and reunions among the vines. Host your milestone celebration at Aroma Events in Valle de Guadalupe, Baja California.",
+        "ogDescription": "Birthdays, anniversaries, and reunions — an occasion made a little more memorable at Aroma Events.",
+        "eyebrow": "Milestone Celebrations",
+        "h1": "Milestone Celebrations",
+        "subhead": "Birthdays, anniversaries, and reunions — an occasion made a little more memorable.",
+        "heroImage": "space-courtyard.webp",
+        "heroAlt": "Shaded stone courtyard with bougainvillea, set for a celebration",
+        "intro": "Some celebrations don't need a full production — they need the right setting. A milestone birthday, an anniversary, a family reunion that only happens once every few years: Aroma Events works for the celebrations that deserve more than a restaurant reservation but don't need a wedding-scale production. The valley does a lot of the work on its own — golden light, open sky, a table set among the vines.",
+        "sections": [
+          {
+            "heading": "What It's Good For",
+            "paragraphs": [
+              "Milestone celebrations here run smaller and looser than weddings by default — there's no ceremony to choreograph, so the day can be built entirely around the meal, the toasts, and the people in the room. Families use it for reunions that bring people in from out of town; friends use it for a fortieth or fiftieth birthday that wants a real setting instead of a rented banquet hall; couples use it for a vow renewal or anniversary dinner.",
+              "The format flexes to whatever the occasion calls for — a seated dinner, a cocktail-style gathering, or something in between."
+            ]
+          }
+        ],
+        "recommendedIntro": "The Garden Courtyard suits most milestone celebrations — flexible enough for a seated dinner or a standing cocktail-style gathering. Larger reunions or milestone parties can use the Vineyard Terrace; smaller, more intimate celebrations often choose the Barrel Room.",
+        "goodToKnow": [
+          "Guest range: 10–200",
+          "Works for daytime or evening celebrations",
+          "Pairs well with a guided tasting — many hosts combine a milestone dinner with wine service",
+          "No ceremony logistics to plan for, which usually means a shorter lead time than a wedding"
+        ],
+        "faq": [
+          { "q": "What's the typical group size for a milestone celebration here?", "a": "It ranges widely — from an intimate dinner of a dozen in the Barrel Room to a reunion of 200 on the Vineyard Terrace." },
+          { "q": "Can we combine a milestone celebration with a wine tasting?", "a": "Yes, many hosts do — see our Wine Dinners & Tastings page for that format." },
+          { "q": "Do you host vow renewals or anniversary dinners?", "a": "Yes — these are some of the most common milestone celebrations we host." }
+        ]
+      },
+      "es": {
+        "metaTitle": "Sede para Celebraciones Especiales en Valle de Guadalupe | Aroma Events",
+        "metaDescription": "Cumpleaños, aniversarios y reencuentros entre las vides. Celebra tu ocasión especial en Aroma Events, Valle de Guadalupe, Baja California.",
+        "ogDescription": "Cumpleaños, aniversarios y reencuentros — una ocasión un poco más memorable en Aroma Events.",
+        "eyebrow": "Celebraciones Especiales",
+        "h1": "Celebraciones Especiales",
+        "subhead": "Cumpleaños, aniversarios y reencuentros — una ocasión un poco más memorable.",
+        "heroImage": "space-courtyard.webp",
+        "heroAlt": "Patio de piedra con sombra y buganvilias, listo para una celebración",
+        "intro": "Algunas celebraciones no necesitan una producción completa — necesitan el entorno correcto. Un cumpleaños importante, un aniversario, un reencuentro familiar que solo pasa cada varios años: Aroma Events funciona para las celebraciones que merecen más que una reservación en un restaurante, pero no requieren la escala de una boda. El valle hace buena parte del trabajo por sí solo — luz dorada, cielo abierto, una mesa puesta entre las vides.",
+        "sections": [
+          {
+            "heading": "Para Qué Funciona",
+            "paragraphs": [
+              "Las celebraciones especiales aquí suelen ser más pequeñas y relajadas que una boda — no hay una ceremonia que coordinar, así que el día se puede construir por completo alrededor de la comida, los brindis y la gente presente. Las familias lo usan para reencuentros que traen invitados de fuera; los amigos, para un cumpleaños número cuarenta o cincuenta que busca un entorno real en lugar de un salón rentado; las parejas, para una renovación de votos o cena de aniversario.",
+              "El formato se adapta a lo que pida la ocasión — una cena sentada, una reunión estilo cóctel, o algo intermedio."
+            ]
+          }
+        ],
+        "recommendedIntro": "El Patio del Jardín se ajusta a la mayoría de las celebraciones especiales — lo suficientemente flexible para una cena sentada o una reunión de pie estilo cóctel. Reencuentros o fiestas más grandes pueden usar la Terraza del Viñedo; celebraciones más íntimas suelen elegir la Sala de Barricas.",
+        "goodToKnow": [
+          "Rango de invitados: 10–200",
+          "Funciona para celebraciones diurnas o nocturnas",
+          "Combina bien con una cata guiada — muchos anfitriones suman una cena especial con servicio de vino",
+          "Al no requerir logística de ceremonia, generalmente necesita menos tiempo de planeación que una boda"
+        ],
+        "faq": [
+          { "q": "¿Cuál es el tamaño habitual de grupo para una celebración especial aquí?", "a": "Varía mucho — desde una cena íntima de una docena de personas en la Sala de Barricas hasta un reencuentro de 200 en la Terraza del Viñedo." },
+          { "q": "¿Podemos combinar una celebración especial con una cata de vino?", "a": "Sí, muchos anfitriones lo hacen — consulta nuestra página de Cenas y Catas de Vino para ese formato." },
+          { "q": "¿Organizan renovaciones de votos o cenas de aniversario?", "a": "Sí — son de las celebraciones especiales más comunes que recibimos." }
+        ]
+      }
+    },
+
+    {
+      "key": "rehearsal-dinners",
+      "slugEn": "rehearsal-dinners",
+      "slugEs": "cenas-de-ensayo",
+      "icon": "icon-leaf",
+      "recommendedSpaces": ["barrel", "courtyard"],
+      "relatedExperiences": ["weddings", "wine-dinners-tastings"],
+      "en": {
+        "metaTitle": "Rehearsal Dinner Venue in Valle de Guadalupe | Aroma Events",
+        "metaDescription": "Host your rehearsal dinner in the candlelit Barrel Room at Aroma Events, Valle de Guadalupe — the night before your wedding, done right.",
+        "ogDescription": "A relaxed evening the night before, in the barrel room or under the garden lights — rehearsal dinners at Aroma Events.",
+        "eyebrow": "Rehearsal Dinners",
+        "h1": "Rehearsal Dinners",
+        "subhead": "A relaxed evening the night before, in the barrel room or under the garden lights.",
+        "heroImage": "space-barrel-room.webp",
+        "heroAlt": "Stacked wine barrels in a dim, candlelit cellar room set for dinner",
+        "intro": "The night before a wedding sets the tone for everything after it. Aroma Events hosts rehearsal dinners in the Barrel Room — candlelit, among the actual wine barrels, small enough that every toast reaches the whole table. It's built for the smaller guest list a rehearsal dinner usually calls for: wedding party, close family, the people who'll be up early the next day helping things run.",
+        "sections": [
+          {
+            "heading": "Why the Barrel Room",
+            "paragraphs": [
+              "A rehearsal dinner works best in a room that feels different from the wedding day itself — smaller, warmer, less choreographed. The Barrel Room does that by nature: low light, close seating, and a setting that encourages toasts and stories rather than a formal program.",
+              "For couples getting married elsewhere on the property the next day, hosting the rehearsal dinner here the night before means no additional travel for the wedding party — just a short walk from one part of the valley's evening to the next."
+            ]
+          }
+        ],
+        "recommendedIntro": "The Barrel Room is built for this — most rehearsal dinners run smaller than the wedding itself, and the room's scale keeps the evening feeling intimate rather than formal. For a larger wedding party or a rehearsal dinner that wants more open air, the Garden Courtyard is also available.",
+        "goodToKnow": [
+          "Typical guest count: 15–45",
+          "Timing: the evening before the wedding",
+          "Indoor, candlelit — a reliable option regardless of evening weather",
+          "Pairs well with an informal, toast-heavy program rather than a seated formal dinner, though either works"
+        ],
+        "faq": [
+          { "q": "How many guests fit in the Barrel Room for a rehearsal dinner?", "a": "Up to 45." },
+          { "q": "Can we book both our wedding and rehearsal dinner at Aroma Events?", "a": "Yes — many couples do exactly that. See our Weddings page for ceremony and reception details." },
+          { "q": "Is the Barrel Room indoors?", "a": "Yes — it's a candlelit indoor space among the wine barrels, which makes it a reliable option regardless of evening weather." }
+        ]
+      },
+      "es": {
+        "metaTitle": "Sede para Cenas de Ensayo en Valle de Guadalupe | Aroma Events",
+        "metaDescription": "Celebra tu cena de ensayo en la Sala de Barricas, iluminada con velas, en Aroma Events, Valle de Guadalupe — la víspera de tu boda, bien hecha.",
+        "ogDescription": "Una noche relajada la víspera, en la sala de barricas o bajo las luces del jardín — cenas de ensayo en Aroma Events.",
+        "eyebrow": "Cenas de Ensayo",
+        "h1": "Cenas de Ensayo",
+        "subhead": "Una noche relajada la víspera, en la sala de barricas o bajo las luces del jardín.",
+        "heroImage": "space-barrel-room.webp",
+        "heroAlt": "Barricas de vino apiladas en una sala en penumbra, lista para la cena",
+        "intro": "La noche antes de una boda marca el tono de todo lo que sigue. Aroma Events recibe cenas de ensayo en la Sala de Barricas — iluminada con velas, entre las barricas mismas, lo bastante pequeña como para que cada brindis llegue a toda la mesa. Está pensada para el grupo más reducido que suele pedir una cena de ensayo: la mesa de honor, familia cercana, las personas que al día siguiente estarán ayudando desde temprano.",
+        "sections": [
+          {
+            "heading": "Por Qué la Sala de Barricas",
+            "paragraphs": [
+              "Una cena de ensayo funciona mejor en un espacio que se sienta distinto al día de la boda — más pequeño, más cálido, menos coreografiado. La Sala de Barricas lo logra por naturaleza: luz tenue, mesas cercanas, un entorno que invita a los brindis y las historias más que a un programa formal.",
+              "Para parejas que se casarán al día siguiente en otra parte de la propiedad, celebrar aquí la cena de ensayo la noche anterior significa que la mesa de honor no tiene que trasladarse — solo un paso corto de un momento de la noche al siguiente."
+            ]
+          }
+        ],
+        "recommendedIntro": "La Sala de Barricas está hecha para esto — la mayoría de las cenas de ensayo son más pequeñas que la boda misma, y la escala del espacio mantiene la noche íntima en lugar de formal. Para una mesa de honor más grande o una cena de ensayo que busque más aire libre, el Patio del Jardín también está disponible.",
+        "goodToKnow": [
+          "Número habitual de invitados: 15–45",
+          "Momento: la noche antes de la boda",
+          "Espacio interior, iluminado con velas — una opción confiable sin importar el clima de la noche",
+          "Combina bien con un programa informal, lleno de brindis, aunque una cena formal sentada también funciona"
+        ],
+        "faq": [
+          { "q": "¿Cuántos invitados caben en la Sala de Barricas para una cena de ensayo?", "a": "Hasta 45." },
+          { "q": "¿Podemos reservar la boda y la cena de ensayo en Aroma Events?", "a": "Sí — muchas parejas lo hacen. Consulta nuestra página de Bodas para los detalles de ceremonia y recepción." },
+          { "q": "¿La Sala de Barricas es un espacio interior?", "a": "Sí — es un espacio interior iluminado con velas entre las barricas de vino, lo que la hace confiable sin importar el clima de la noche." }
+        ]
+      }
+    },
+
+    {
+      "key": "private-gatherings",
+      "slugEn": "private-gatherings",
+      "slugEs": "reuniones-privadas",
+      "icon": "icon-calendar",
+      "recommendedSpaces": ["barrel", "courtyard", "terrace"],
+      "relatedExperiences": ["milestone-celebrations", "wine-dinners-tastings"],
+      "en": {
+        "metaTitle": "Private Event Space in Valle de Guadalupe | Aroma Events",
+        "metaDescription": "Bring your own reason to celebrate. Aroma Events offers flexible private event space in Valle de Guadalupe, Baja California, for groups of 10 to 200.",
+        "ogDescription": "Bring your own reason to celebrate — we'll help shape the rest. Private gatherings at Aroma Events.",
+        "eyebrow": "Private Gatherings",
+        "h1": "Private Gatherings",
+        "subhead": "Bring your own reason to celebrate — we'll help shape the rest.",
+        "heroImage": "open-spaces.webp",
+        "heroAlt": "Warm stucco winery building with string lights and wine barrels",
+        "intro": "Not every gathering fits neatly into a category. Aroma Events hosts plenty of events that aren't quite a wedding, a corporate retreat, or a milestone birthday — a friend group's annual trip, a going-away dinner, a fundraiser, a family gathering with no particular occasion attached beyond wanting to be together in the valley. If your event doesn't fit one of our other categories, this is the one that does.",
+        "sections": [
+          {
+            "heading": "How It Works",
+            "paragraphs": [
+              "Because private gatherings don't follow a set format, the planning conversation usually starts with three questions: how many guests, what kind of pace (seated dinner vs. something looser), and which space fits both. From there, the three spaces at Aroma Events — open-air terrace, shaded courtyard, candlelit barrel room — give enough range to fit almost any private occasion, from a dozen people to two hundred.",
+              "Tell us what you're picturing and we'll help figure out the rest, from timing to which space makes sense."
+            ]
+          }
+        ],
+        "recommendedIntro": "For a small, intimate gathering, the Barrel Room offers the most contained, candlelit setting. For something mid-sized with more flexibility — cocktail-style or seated — the Garden Courtyard works well. For a larger group or an event that wants to be fully outdoors, the Vineyard Terrace has the most room.",
+        "goodToKnow": [
+          "Guest range: 10–200",
+          "Flexible format — seated, standing, or a mix",
+          "Works for: reunions, fundraisers, going-away parties, family gatherings, and anything else that doesn't fit a set category",
+          "Reach out with your vision and we'll help shape the details"
+        ],
+        "faq": [
+          { "q": "What kinds of private events do you host?", "a": "Anything from friend reunions and fundraisers to going-away parties and family gatherings — if it doesn't fit a wedding, corporate, or milestone category, it likely fits here." },
+          { "q": "What's the smallest group you can accommodate?", "a": "The Barrel Room comfortably hosts smaller private gatherings; reach out with your guest count and we'll help find the right fit." },
+          { "q": "Can I combine a private gathering with a wine tasting?", "a": "Yes — see our Wine Dinners & Tastings page for that format, which many private groups fold into their gathering." }
+        ]
+      },
+      "es": {
+        "metaTitle": "Espacio para Reuniones Privadas en Valle de Guadalupe | Aroma Events",
+        "metaDescription": "Trae tu propia razón para celebrar. Aroma Events ofrece espacio flexible para eventos privados en Valle de Guadalupe, Baja California, para grupos de 10 a 200 personas.",
+        "ogDescription": "Trae tu propia razón para celebrar — nosotros ayudamos con el resto. Reuniones privadas en Aroma Events.",
+        "eyebrow": "Reuniones Privadas",
+        "h1": "Reuniones Privadas",
+        "subhead": "Trae tu propia razón para celebrar — nosotros ayudamos con el resto.",
+        "heroImage": "open-spaces.webp",
+        "heroAlt": "Edificio de estuco cálido con luces y barricas de vino",
+        "intro": "No todas las reuniones encajan claramente en una categoría. En Aroma Events recibimos muchos eventos que no son exactamente una boda, un retiro corporativo o un cumpleaños especial — el viaje anual de un grupo de amigos, una cena de despedida, una colecta de fondos, una reunión familiar sin más motivo que querer estar juntos en el valle. Si tu evento no encaja en nuestras otras categorías, esta es la que le queda.",
+        "sections": [
+          {
+            "heading": "Cómo Funciona",
+            "paragraphs": [
+              "Como las reuniones privadas no siguen un formato fijo, la conversación de planeación suele empezar con tres preguntas: cuántos invitados, qué ritmo buscas (cena sentada o algo más relajado) y qué espacio se ajusta a ambas cosas. A partir de ahí, los tres espacios de Aroma Events — terraza al aire libre, patio con sombra, sala de barricas iluminada con velas — dan suficiente margen para casi cualquier ocasión privada, desde una docena de personas hasta doscientas.",
+              "Cuéntanos qué tienes en mente y te ayudamos a definir el resto, desde el horario hasta qué espacio tiene más sentido."
+            ]
+          }
+        ],
+        "recommendedIntro": "Para una reunión pequeña e íntima, la Sala de Barricas ofrece el entorno más contenido, iluminado con velas. Para algo mediano con más flexibilidad — estilo cóctel o sentado — el Patio del Jardín funciona bien. Para un grupo más grande o un evento que busque estar completamente al aire libre, la Terraza del Viñedo tiene más espacio.",
+        "goodToKnow": [
+          "Rango de invitados: 10–200",
+          "Formato flexible — sentado, de pie, o una combinación",
+          "Ideal para: reencuentros, colectas de fondos, despedidas, reuniones familiares y cualquier otra ocasión que no encaje en una categoría fija",
+          "Cuéntanos tu idea y te ayudamos a definir los detalles"
+        ],
+        "faq": [
+          { "q": "¿Qué tipo de eventos privados reciben?", "a": "Desde reencuentros de amigos y colectas de fondos hasta despedidas y reuniones familiares — si no encaja como boda, evento corporativo o celebración especial, probablemente encaje aquí." },
+          { "q": "¿Cuál es el grupo más pequeño que pueden recibir?", "a": "La Sala de Barricas recibe cómodamente reuniones privadas pequeñas; cuéntanos tu número de invitados y te ayudamos a encontrar el espacio correcto." },
+          { "q": "¿Puedo combinar una reunión privada con una cata de vino?", "a": "Sí — consulta nuestra página de Cenas y Catas de Vino para ese formato, que muchos grupos privados suman a su reunión." }
+        ]
+      }
+    }
+  ],
+
+  "checklist": {
+    "slugEn": "event-planning-checklist",
+    "slugEs": "lista-de-planificacion-de-eventos",
+    "en": {
+      "metaTitle": "Event Planning Checklist | Aroma Events, Valle de Guadalupe",
+      "metaDescription": "A timeline-based checklist for planning a wedding, wine dinner, or private event at Aroma Events in Valle de Guadalupe, Baja California.",
+      "ogDescription": "A general timeline for planning your event at Aroma Events, from twelve months out to the day itself.",
+      "eyebrow": "Plan Your Event",
+      "h1": "Event Planning Checklist",
+      "subhead": "A general timeline for planning your event at Aroma Events — adjust it to fit the occasion.",
+      "intro": "Every event here is different, but the planning timeline tends to follow a similar shape, whether you're booking a wedding, a corporate retreat, or a milestone celebration. This checklist is a general guide, not a strict rulebook — a rehearsal dinner needs a fraction of the lead time a 200-guest wedding does. Use it as a starting point, and talk with our team early about your date; the valley's high season books up faster than people expect.",
+      "phases": [
+        {
+          "heading": "9–12 Months Out",
+          "items": [
+            "Set a guest count range and rough budget",
+            "Reach out to Aroma Events to check date availability and choose a space — Vineyard Terrace, Garden Courtyard, or Barrel Room",
+            "Send save-the-dates if travel is involved — Valle de Guadalupe is a destination for most guests",
+            "Start researching caterers, wine service, and other vendors for the valley"
+          ]
+        },
+        {
+          "heading": "6 Months Out",
+          "items": [
+            "Confirm your vendor list: catering, wine or bar service, photography, music",
+            "Plan guest lodging — Ensenada and the surrounding valley have the closest options",
+            "Finalize your guest list and start invitations",
+            "Walk the space again in person if you haven't recently, and confirm the layout for your guest count"
+          ]
+        },
+        {
+          "heading": "1–2 Months Out",
+          "items": [
+            "Confirm your final headcount",
+            "Finalize the day-of timeline — ceremony or start time, dinner service, toasts",
+            "Arrange transportation for guests unfamiliar with the valley's roads, especially for evening events",
+            "Confirm any AV, seating, or setup needs directly with our team"
+          ]
+        },
+        {
+          "heading": "1–2 Weeks Out",
+          "items": [
+            "Reconfirm final numbers with caterers and vendors",
+            "Share the day-of timeline with your wedding party, team, or key guests",
+            "Check the weather and confirm a backup plan for outdoor spaces",
+            "Pack for the valley — evenings cool down quickly even after a warm day"
+          ]
+        },
+        {
+          "heading": "Day Of",
+          "items": [
+            "Arrive with enough buffer for setup and vendor load-in",
+            "Designate one point of contact for last-minute questions",
+            "Take a moment before guests arrive — you did the planning, now let the evening happen"
+          ]
+        }
+      ],
+      "occasionsIntro": "Timelines shift depending on what you're planning. See the specifics for your occasion:",
+      "ctaHeading": "Ready to talk dates?",
+      "ctaText": "Tell us about your event and we'll follow up to talk dates, spaces, and what's possible."
+    },
+    "es": {
+      "metaTitle": "Lista de Planificación de Eventos | Aroma Events, Valle de Guadalupe",
+      "metaDescription": "Una lista organizada por etapas para planear tu boda, cena de vino o evento privado en Aroma Events, Valle de Guadalupe, Baja California.",
+      "ogDescription": "Un cronograma general para planear tu evento en Aroma Events, desde doce meses antes hasta el día mismo.",
+      "eyebrow": "Planea tu Evento",
+      "h1": "Lista de Planificación de Eventos",
+      "subhead": "Un cronograma general para planear tu evento en Aroma Events — ajústalo según la ocasión.",
+      "intro": "Cada evento aquí es distinto, pero el cronograma de planeación suele seguir una forma parecida, ya sea que estés reservando una boda, un retiro corporativo o una celebración especial. Esta lista es una guía general, no una regla estricta — una cena de ensayo necesita solo una fracción del tiempo de anticipación que requiere una boda de 200 invitados. Úsala como punto de partida y platica con nuestro equipo desde temprano sobre tu fecha; la temporada alta del valle se reserva más rápido de lo que la gente espera.",
+      "phases": [
+        {
+          "heading": "9 a 12 Meses Antes",
+          "items": [
+            "Define un rango de invitados y un presupuesto aproximado",
+            "Contáctanos para confirmar disponibilidad de fecha y elegir un espacio — Terraza del Viñedo, Patio del Jardín o Sala de Barricas",
+            "Envía \"save the dates\" si tus invitados van a viajar — Valle de Guadalupe es un destino para la mayoría",
+            "Empieza a investigar proveedores de banquetes, vino y otros servicios en la región"
+          ]
+        },
+        {
+          "heading": "6 Meses Antes",
+          "items": [
+            "Confirma tu lista de proveedores: banquetes, servicio de vino o bar, fotografía, música",
+            "Organiza el hospedaje de tus invitados — Ensenada y sus alrededores tienen las opciones más cercanas",
+            "Cierra tu lista de invitados y comienza a enviar invitaciones",
+            "Visita el espacio de nuevo en persona si no lo has hecho recientemente y confirma el acomodo según tu número de invitados"
+          ]
+        },
+        {
+          "heading": "1 a 2 Meses Antes",
+          "items": [
+            "Confirma el número final de invitados",
+            "Cierra el itinerario del día — hora de ceremonia o inicio, servicio de la cena, brindis",
+            "Organiza transporte para invitados que no conocen los caminos del valle, sobre todo para eventos nocturnos",
+            "Confirma directamente con nuestro equipo cualquier necesidad de audio, acomodo o montaje"
+          ]
+        },
+        {
+          "heading": "1 a 2 Semanas Antes",
+          "items": [
+            "Reconfirma los números finales con proveedores y banquetes",
+            "Comparte el itinerario del día con tu mesa de honor, equipo o invitados clave",
+            "Revisa el clima y confirma un plan alterno para los espacios al aire libre",
+            "Empaca pensando en el valle — las noches refrescan rápido incluso después de un día cálido"
+          ]
+        },
+        {
+          "heading": "El Día del Evento",
+          "items": [
+            "Llega con tiempo suficiente para el montaje y la llegada de proveedores",
+            "Designa a una sola persona como punto de contacto para preguntas de último momento",
+            "Tómate un momento antes de que lleguen los invitados — ya hiciste la planeación, ahora deja que la noche suceda"
+          ]
+        }
+      ],
+      "occasionsIntro": "El cronograma cambia según lo que estés planeando. Consulta los detalles para tu ocasión:",
+      "ctaHeading": "¿Listo para hablar de fechas?",
+      "ctaText": "Cuéntanos sobre tu evento y te contactaremos para hablar de fechas, espacios y posibilidades."
+    }
+  }
+}
