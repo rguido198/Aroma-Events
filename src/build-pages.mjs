@@ -8,6 +8,14 @@ import path from 'node:path';
 
 const SITE = 'https://aromavalledeguadalupe.com';
 
+// Cache-busting versions for /css and /js (see src/stamp-asset-versions.mjs — those
+// assets are cached for 7 days, so an unversioned URL can serve stale CSS/JS on newly
+// visited pages). Run stamp-asset-versions.mjs first; fall back to no version if absent.
+const ASSET_VERSIONS = fs.existsSync('src/asset-versions.json')
+  ? JSON.parse(fs.readFileSync('src/asset-versions.json', 'utf8'))
+  : { css: '', i18n: '', main: '' };
+const v = (version) => (version ? `?v=${version}` : '');
+
 const translations = JSON.parse(fs.readFileSync('src/translations.json', 'utf8'));
 const content = JSON.parse(fs.readFileSync('src/pages-content.json', 'utf8'));
 
@@ -450,7 +458,7 @@ function renderShell({ lang, url, title, description, ogDescription, ogImage, al
   <meta name="twitter:description" content="${ogDescription}">
   <meta name="twitter:image" content="${SITE}${ogImage}">
 
-  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/styles.css${v(ASSET_VERSIONS.css)}">
 
   ${jsonLd.map(obj => `<script type="application/ld+json">\n${JSON.stringify(obj, null, 2)}\n</script>`).join('\n  ')}
 </head>
@@ -465,8 +473,8 @@ function renderShell({ lang, url, title, description, ogDescription, ogImage, al
 
   ${footer(lang)}
 
-  <script src="/js/i18n.js" defer></script>
-  <script src="/js/main.js" defer></script>
+  <script src="/js/i18n.js${v(ASSET_VERSIONS.i18n)}" defer></script>
+  <script src="/js/main.js${v(ASSET_VERSIONS.main)}" defer></script>
 </body>
 </html>
 `;
