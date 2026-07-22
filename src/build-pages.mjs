@@ -161,8 +161,9 @@ function footer(lang) {
         <a href="${home}#inquire" class="min-h-11 flex items-center hover:text-wine transition-colors">${t['nav.inquire']}</a>
       </nav>
     </div>
-    <div class="max-w-7xl mx-auto px-6 lg:px-10 mt-12 pt-6 border-t border-ink/10 text-xs text-ink/50">
-      &copy; <span id="current-year"></span> Aroma Events. ${t['footer.rights']}
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 mt-12 pt-6 border-t border-ink/10 text-xs text-ink/50 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+      <div>&copy; <span id="current-year"></span> Aroma Events. ${t['footer.rights']}</div>
+      <div><a href="https://technologyconsultants.ventures" target="_blank" rel="nofollow sponsored" class="hover:text-wine transition-colors">${t['footer.credit']}</a></div>
     </div>
   </footer>`;
 }

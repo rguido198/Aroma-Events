@@ -106,7 +106,8 @@
     "form.status.success": "Thank you — we've received your inquiry and will be in touch soon.",
     "form.status.error": "Something went wrong sending your inquiry. Please email us at hola@aromavdg.com.",
     "footer.tagline": "Celebrating the aroma of life — a private event space in Mexico’s wine country.",
-    "footer.rights": "All rights reserved."
+    "footer.rights": "All rights reserved.",
+    "footer.credit": "Built by Technology Consultants Ventures"
   },
   "es": {
     "meta.title": "Aroma Events — Espacio Privado para Eventos en Valle de Guadalupe",
@@ -215,6 +216,7 @@
     "form.status.success": "Gracias — hemos recibido tu solicitud y te contactaremos pronto.",
     "form.status.error": "Hubo un problema al enviar tu solicitud. Escríbenos a hola@aromavdg.com.",
     "footer.tagline": "Celebrando el aroma de la vida — un espacio privado para eventos en la región vinícola de México.",
-    "footer.rights": "Todos los derechos reservados."
+    "footer.rights": "Todos los derechos reservados.",
+    "footer.credit": "Desarrollado por Technology Consultants Ventures"
   }
 }
