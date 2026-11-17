@@ -159,6 +159,7 @@ function footer(lang) {
         <a href="${home}#gallery" class="min-h-11 flex items-center hover:text-wine transition-colors">${t['nav.gallery']}</a>
         <a href="${home}#location" class="min-h-11 flex items-center hover:text-wine transition-colors">${t['nav.location']}</a>
         <a href="${home}#inquire" class="min-h-11 flex items-center hover:text-wine transition-colors">${t['nav.inquire']}</a>
+        <a href="${pageUrl(lang, 'corporate-retreats').replace(SITE, '')}" class="min-h-11 flex items-center hover:text-wine transition-colors">${t['exp.corporate.name']}</a>
       </nav>
     </div>
     <div class="max-w-7xl mx-auto px-6 lg:px-10 mt-12 pt-6 border-t border-ink/10 text-xs text-ink/50 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
